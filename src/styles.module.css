@@ -13,11 +13,12 @@ body {
   line-height: 1.5;
   color: #333;
   background-color: #a1c3ff;
-  text-align: center;
+  /* text-align: center; */
 }
 
 h1, h2 {
   margin-bottom: -20px;
+  text-align: center;
 }
 
 ul {
@@ -97,10 +98,6 @@ img {
 
 .item {
   flex: 1;
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ), url(./images/DALL·E\ 2023-01-26\ 22.37.57\ -\ high\ resolution\ galaxy\ of\ stars.png);
   font-size: 20px;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #fff;
@@ -130,13 +127,20 @@ img {
 }
 
 .box{
-  flex: 1;
-  background: #0a51cc;
+  background: #333;
   color: #fff;
   border-radius: 10px;
   margin: 20px 10px;
   box-shadow: 0 3px 5px rgba(0,0,0,0.6);
   padding: 15px 20px;
+}
+
+.list_box ul{
+  list-style-type: disc;
+}
+
+.list_box ul ul{
+  list-style-type: circle;
 }
 
 .box:hover {
