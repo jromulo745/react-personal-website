@@ -67,7 +67,7 @@ function App() {
       {home ? 
         (<div className="boxes">  
           <div className="container">
-            <a style={{cursor: 'pointer'}} onClick={() => changeView(1)} className="box">
+            <a style={{cursor: 'pointer'}} onClick={() => changeView(2)} className="box">
               <h2>About Me</h2>
               <img src={require('./images/photo.png')} width="127" height="169" style={{borderRadius: '10px'}} />
               <p>Please click this box to view more information about me</p>
