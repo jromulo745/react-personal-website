@@ -6,6 +6,7 @@ import InfoCluster from './components/InfoCluster';
 import Footer from './components/Footer';
 import React, {useState} from "react";
 import AboutMe from './components/AboutMe';
+import WebApps from './components/WebApps';
 
 import './App.css';
 
@@ -13,14 +14,24 @@ function App() {
 
   const [home, showHome] = useState(true);
   const [about, showAbout] = useState(false);
+  const [apps, showApps] = useState(false);
 
   function changeView(link) {
-    if (home == true && link == 1) {
-      showHome(false);
-      showAbout(true);
-    }
-    else if (home == false && link == 2) {
+    if (home == false && link == 1) { // make Home visible while others not
       showHome(true);
+      showAbout(false);
+      showApps(false);
+    }
+
+    else if (about == false && link == 2) { // make About Me visible while others not
+      showAbout(true);
+      showHome(false);
+      showApps(false);
+    }
+    
+    else if (apps == false && link == 3 ) { // make Apps visible while others not
+      showApps(true);
+      showHome(false);
       showAbout(false);
     }
   }
@@ -32,10 +43,13 @@ function App() {
         <div className="container">
           <ul className="nav">
             <li>
-              <a style={{cursor: 'pointer'}} onClick={() => {changeView(2)}}>Home</a>
+              <a style={{cursor: 'pointer'}} onClick={() => {changeView(1)}}>Home</a>
             </li>
             <li>
-              <a style={{cursor: 'pointer'}} onClick={() => {changeView(1)}}>About Me</a>
+              <a style={{cursor: 'pointer'}} onClick={() => {changeView(2)}}>About Me</a>
+            </li>
+            <li>
+              <a style={{cursor: 'pointer'}} onClick={() => {changeView(3)}}>Apps</a>
             </li>
             <li>
               <a href="https://github.com/jromulo745" target="_blank">GitHub</a>
@@ -48,6 +62,7 @@ function App() {
       </nav>
       <Header />
       {home ? <Banner /> : null}      
+      
       {/* {home ? <InfoCluster /> : null} */}
       {home ? 
         (<div className="boxes">  
@@ -74,6 +89,7 @@ function App() {
         : null}
 
       {about ? <AboutMe /> : null}
+      {apps ? <WebApps /> : null}
       <Footer />
     </div>
   );
