@@ -89,38 +89,76 @@ function WebApps() {
     + (temp[4][1] === '*' ? setChoice5(temp[4].substring(2)) : setChoice5(temp[4]))
     + console.log(counter);
   }
-
+  //checkpoint
   return (
-    <div>
-      <h2 style={{marginBottom: '10px'}}>File Character Counter</h2>
-      <div className={`${styles.box}`} style={{marginLeft: '300px', marginRight: '300px'}}>
+    // <div>
+    //   <h2 style={{marginBottom: '10px'}}>File Character Counter</h2>
+    //   <div className={`${styles.box}`} style={{marginLeft: '300px', marginRight: '300px'}}>
+    //       <input style={hover_style} className="box" type="file" onChange={handleFileInputChange} />
+    //   </div>
+    //   <h2 style={{marginBottom: '10px'}}>IT Tester</h2>
+    //   <div className={`${styles.box}`} style={{marginLeft: '300px', marginRight: '300px'}}>
+    //     <div className={`${styles.button} ${styles.button}`}>
+    //       {/* begin test button; null if next button true and content if false */}
+    //       {next_button ? null : (<button style={{marginBottom: '10px', marginTop: '5px'}} onClick={handleClick}>Begin Test</button>)}
+    //       {/* next button */}
+    //       {next_button ? (<button style={{marginBottom: '-10px', marginTop: '5px'}} onClick ={nextQuestion}>Next Question</button>) : null}
+    //     </div>
+    //     {question_cluster ? (<h2 style={{textAlign: 'left', marginLeft: '10px'}}><br />{current_question}</h2>) : null}
+    //     {question_cluster ? ( <div style={{textAlign: 'left', marginLeft: '10px'}} className={`${styles.button} ${styles.button}`}>
+    //       <br />
+    //       <button>{current_choice_1}</button>
+    //       <br />
+    //       <br />
+    //       <button>{current_choice_2}</button>
+    //       <br />
+    //       <br />
+    //       <button>{current_choice_3}</button>
+    //       <br />
+    //       <br />
+    //       <button>{current_choice_4}</button>
+    //       <br />
+    //       <br />
+    //       <button style={{marginBottom: '15px'}}>{current_choice_5}</button> </div>
+    //     ) : null}
+    //   </div>
+    // </div>
+    <div className="banner_box banner">
+      <h2 style={{marginBottom: '5px'}}>File Character Counter</h2>
+      <div className="container">
+        <div className='item' style={{backgroundImage: 'none', backgroundColor: '#333333'}}>
           <input style={hover_style} className="box" type="file" onChange={handleFileInputChange} />
-      </div>
-      <h2 style={{marginBottom: '10px'}}>IT Tester</h2>
-      <div className={`${styles.box}`} style={{marginLeft: '300px', marginRight: '300px'}}>
-        <div className={`${styles.button} ${styles.button}`}>
-          {/* begin test button; null if next button true and content if false */}
-          {next_button ? null : (<button style={{marginBottom: '10px', marginTop: '5px'}} onClick={handleClick}>Begin Test</button>)}
-          {/* next button */}
-          {next_button ? (<button style={{marginBottom: '-10px', marginTop: '5px'}} onClick ={nextQuestion}>Next Question</button>) : null}
         </div>
-        {question_cluster ? (<h2 style={{textAlign: 'left', marginLeft: '10px'}}><br />{current_question}</h2>) : null}
-        {question_cluster ? ( <div style={{textAlign: 'left', marginLeft: '10px'}} className={`${styles.button} ${styles.button}`}>
-          <br />
-          <button>{current_choice_1}</button>
-          <br />
-          <br />
-          <button>{current_choice_2}</button>
-          <br />
-          <br />
-          <button>{current_choice_3}</button>
-          <br />
-          <br />
-          <button>{current_choice_4}</button>
-          <br />
-          <br />
-          <button style={{marginBottom: '15px'}}>{current_choice_5}</button> </div>
-        ) : null}
+      </div>
+      <h2 style={{marginTop: '5px', marginBottom: '-2px'}}>IT Tester</h2>
+      <div className="container">
+        {/* ---- */}
+        <div className='item' style={{backgroundImage: 'none', backgroundColor: '#333333'}}>
+          <div className={`${styles.button} ${styles.button}`}>
+            {/* begin test button; null if next button true and content if false */}
+            {next_button ? null : (<button style={{marginBottom: '10px', marginTop: '5px'}} onClick={handleClick}>Begin Test</button>)}
+            {/* next button */}
+            {next_button ? (<button style={{marginBottom: '-10px', marginTop: '5px'}} onClick ={nextQuestion}>Next Question</button>) : null}
+          </div>
+          {question_cluster ? (<h2 style={{textAlign: 'left', marginLeft: '10px'}}><br />{current_question}</h2>) : null}
+          {question_cluster ? ( <div style={{textAlign: 'left', marginLeft: '10px'}} className={`${styles.button} ${styles.button}`}>
+            <br />
+            <button>{current_choice_1}</button>
+            <br />
+            <br />
+            <button>{current_choice_2}</button>
+            <br />
+            <br />
+            <button>{current_choice_3}</button>
+            <br />
+            <br />
+            <button>{current_choice_4}</button>
+            <br />
+            <br />
+            <button style={{marginBottom: '15px'}}>{current_choice_5}</button> </div>
+          ) : null}
+        </div>
+        {/* ---- */}
       </div>
     </div>
   );
