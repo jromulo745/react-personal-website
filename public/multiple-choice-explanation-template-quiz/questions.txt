@@ -1,0 +1,15 @@
+What is the module format for a stick of SODIMM DDR4 RAM?
+You just added a second memory module to a laptop. However, after rebooting the system, the OS reports the same amount of memory as before. What should you do next?
+One of your customers reports that she walked away from her laptop for 30 minutes, and when she returned, the display was very dim. She increased the brightness setting and moved the mouse but to no effect. What should you do first?
+You are helping a customer with a laptop issue. The customer says that two days ago the laptop was accidentally dropped while it was charging. You observe that the laptop will not turn on and that it is connected to the correct power adapter. Which of the following is the most likely cause?
+You want to reduce the risk of your laptop being stolen. Which of the following is the best option?
+A user cannot make contactless payments using NFC, connect to the Internet, or send/receive calls from their mobile device. The user is able to boot the device and sign on. Which of the following is most likely the cause of the problem?
+Which kind of video technology do most laptop LCDs use?
+Which of the following uses an organic compound that emits light?
+Which of the following allows you to access a WLAN?
+You have been tasked with replacing a Wi-Fi/Bluetooth card in a laptop. You open the laptop and find a card that uses the 2230 standard. What type of card is this?
+Which type of charging connector would you find on an iPad?
+You are required to add long-term storage to a smartphone. Which type would you most likely add?
+The organization you work for allows employees to work using their own mobile devices in a BYOD manner. You have been tasked with setting up the devices so that they can “beam” information back and forth between each other. What is this known as?
+Which of the following can be useful in areas where a smartphone has cellular access but a PC (or laptop) cannot connect to the Internet?
+A user has asked you to provide her with a more accurate way of manipulating her smartphone screen. She is part of a mobile sales force and needs to be able to work quickly and efficiently. Which of the following is the easiest and best solution?
