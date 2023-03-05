@@ -93,11 +93,11 @@ function WebApps() {
   return (
     <div>
       <h2 style={{marginBottom: '10px'}}>File Character Counter</h2>
-      <div className={`${styles.box}`} style={{marginLeft: '100px', marginRight: '100px'}}>
+      <div className={`${styles.box}`} style={{marginLeft: '300px', marginRight: '300px'}}>
           <input style={hover_style} className="box" type="file" onChange={handleFileInputChange} />
       </div>
       <h2 style={{marginBottom: '10px'}}>IT Tester</h2>
-      <div className={`${styles.box}`} style={{marginLeft: '100px', marginRight: '100px'}}>
+      <div className={`${styles.box}`} style={{marginLeft: '300px', marginRight: '300px'}}>
         <div className={`${styles.button} ${styles.button}`}>
           {/* begin test button; null if next button true and content if false */}
           {next_button ? null : (<button style={{marginBottom: '10px', marginTop: '5px'}} onClick={handleClick}>Begin Test</button>)}
