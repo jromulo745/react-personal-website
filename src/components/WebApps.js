@@ -1,12 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from '../styles.module.css';
 
+// import text_file from '../../public/text_file.txt';
+
 function WebApps() {
+
+  // -----------------------------------------------------------------
 
   const hover_style = {
     cursor: 'pointer',
   };
-
 
   function handleFileRead(event) {
     const content = event.target.result.toString();
@@ -25,14 +28,99 @@ function WebApps() {
     reader.readAsText(file);
   }
 
+  // -----------------------------------------------------------------
+
+  let questions;
+  let choices;
+  const [counter, setCounter] = useState(0);
+  const [current_question, setQuestion] = useState('');
+  const [question_cluster, showQuestion] = useState(false);
+  const [next_button, shownNextButton] = useState(false);
+  const [current_choice_1, setChoice1] = useState('');
+  const [current_choice_2, setChoice2] = useState('');
+  const [current_choice_3, setChoice3] = useState('');
+  const [current_choice_4, setChoice4] = useState('');
+  const [current_choice_5, setChoice5] = useState('');
+  
+  // let choice_array = [
+  //   setChoice1,
+  //   setChoice2,
+  //   setChoice3,
+  //   setChoice4,
+  //   setChoice5,
+  // ];
+
+  // load questions text file data
+  fetch('/multiple-choice-explanation-template-quiz/questions.txt')
+  .then((response) => response.text())
+  .then(data => {
+    questions = data.split('\n');
+  })
+
+  // load choices text file data
+  fetch('/multiple-choice-explanation-template-quiz/choices.txt')
+  .then((response) => response.text())
+  .then(data => {
+    choices = data.split('\n');
+  });
+
+  function handleClick() {
+    let temp = choices[counter].split(',');
+
+    return showQuestion(true) 
+    + shownNextButton(true)
+    + setQuestion(questions[counter])
+    + (temp[0][1] === '*' ? setChoice1(temp[0].substring(2)) : setChoice1(temp[0]))
+    + (temp[1][1] === '*' ? setChoice2(temp[1].substring(2)) : setChoice2(temp[1]))
+    + (temp[2][1] === '*' ? setChoice3(temp[2].substring(2)) : setChoice3(temp[2]))
+    + (temp[3][1] === '*' ? setChoice4(temp[3].substring(2)) : setChoice4(temp[3]))
+    + (temp[4][1] === '*' ? setChoice5(temp[4].substring(2)) : setChoice5(temp[4]))
+    + setCounter(counter + 1);
+  }
+  
+  function nextQuestion() {
+    let temp = choices[counter].split(',');
+    return setQuestion(questions[counter]) 
+    + setCounter(counter + 1) 
+    + (temp[0][1] === '*' ? setChoice1(temp[0].substring(2)) : setChoice1(temp[0]))
+    + (temp[1][1] === '*' ? setChoice2(temp[1].substring(2)) : setChoice2(temp[1]))
+    + (temp[2][1] === '*' ? setChoice3(temp[2].substring(2)) : setChoice3(temp[2]))
+    + (temp[3][1] === '*' ? setChoice4(temp[3].substring(2)) : setChoice4(temp[3]))
+    + (temp[4][1] === '*' ? setChoice5(temp[4].substring(2)) : setChoice5(temp[4]))
+    + console.log(counter);
+  }
+
   return (
     <div>
       <h2 style={{marginBottom: '10px'}}>File Character Counter</h2>
       <div className={`${styles.box}`} style={{marginLeft: '100px', marginRight: '100px'}}>
           <input style={hover_style} className="box" type="file" onChange={handleFileInputChange} />
       </div>
+      <h2 style={{marginBottom: '10px'}}>IT Tester</h2>
+      <div className={`${styles.box}`} style={{marginLeft: '100px', marginRight: '100px'}}>
+        <div className={`${styles.button} ${styles.button}`}>
+          {next_button ? null: (<button style={{marginBottom: '10px'}} onClick={handleClick}>Begin Test</button>)}
+          {next_button ? (<button onClick ={nextQuestion}>Next Question</button>) : null}
+        </div>
+        {question_cluster ? (<h2 style={{textAlign: 'left'}}><br />{current_question}</h2>) : null}
+        {question_cluster ? ( <div style={{textAlign: 'left'}} className={`${styles.button} ${styles.button}`}>
+          <br />
+          <button>{current_choice_1}</button>
+          <br />
+          <br />
+          <button>{current_choice_2}</button>
+          <br />
+          <br />
+          <button>{current_choice_3}</button>
+          <br />
+          <br />
+          <button>{current_choice_4}</button>
+          <br />
+          <br />
+          <button>{current_choice_5}</button> </div>
+        ) : null}
+      </div>
     </div>
-    
   );
 }
 
