@@ -18,6 +18,7 @@ function App() {
 
   function changeView(link) {
     if (home == false && link == 1) { // make Home visible while others not
+      window.scrollTo(0, 0);
       showHome(true);
       showAbout(false);
       showApps(false);

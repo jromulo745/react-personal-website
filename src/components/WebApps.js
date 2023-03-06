@@ -4,7 +4,7 @@ import styles from '../styles.module.css';
 // import text_file from '../../public/text_file.txt';
 
 function WebApps() {
-
+  window.scrollTo(0, 0);
   // -----------------------------------------------------------------
 
   const hover_style = {
@@ -89,6 +89,10 @@ function WebApps() {
     if (correct_answer === choice) {
       alert('correct');
     }
+    else {
+      alert('incorrect');
+    }
+
   }
 
   //checkpoint

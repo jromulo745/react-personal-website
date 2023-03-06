@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../styles.module.css';
 
 function AboutMe() {
+  window.scrollTo(0, 0);
   return (
     <div className={styles.boxes}>
       <div className={styles.container}>
