@@ -86,7 +86,7 @@ function WebApps() {
   function checkAnswer(choice) {
     console.log(correct_answer);
     console.log(choice);
-    if (correct_answer == choice) {
+    if (correct_answer === choice) {
       alert('correct');
     }
   }
