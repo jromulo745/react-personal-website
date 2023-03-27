@@ -4,7 +4,7 @@ import styles from '../styles.module.css';
 // import text_file from '../../public/text_file.txt';
 
 function WebApps() {
-  window.scrollTo(0, 0);
+  
   // -----------------------------------------------------------------
 
   const hover_style = {
@@ -41,7 +41,15 @@ function WebApps() {
   const [current_choice_3, setChoice3] = useState('');
   const [current_choice_4, setChoice4] = useState('');
   const [current_choice_5, setChoice5] = useState('');
+  const [buttonColor1, setButtonColor1] = useState('04AA6D');
+  const [buttonColor2, setButtonColor2] = useState('04AA6D');
+  const [buttonColor3, setButtonColor3] = useState('04AA6D');
+  const [buttonColor4, setButtonColor4] = useState('04AA6D');
+  const [buttonColor5, setButtonColor5] = useState('04AA6D');
   const [correct_answer, setAnswer] = useState('');
+  const [correct_button, setCorrectButton] = useState('');
+  // const [selected_button, setSelectedButton] = useState('');
+  const [disabled, setDisabled] = useState(false);
 
   // load questions text file data
   fetch('/multiple-choice-explanation-template-quiz/questions.txt')
@@ -63,11 +71,11 @@ function WebApps() {
     return showQuestion(true) 
     + shownNextButton(true)
     + setQuestion(questions[counter])
-    + (temp[0][1] === '*' ? (setChoice1(temp[0].substring(2)), setAnswer(temp[0].substring(2))) : setChoice1(temp[0]))
-    + (temp[1][1] === '*' ? (setChoice2(temp[1].substring(2)), setAnswer(temp[1].substring(2))) : setChoice2(temp[1]))
-    + (temp[2][1] === '*' ? (setChoice3(temp[2].substring(2)), setAnswer(temp[2].substring(2))) : setChoice3(temp[2]))
-    + (temp[3][1] === '*' ? (setChoice4(temp[3].substring(2)), setAnswer(temp[3].substring(2))) : setChoice4(temp[3]))
-    + (temp[4][1] === '*' ? (setChoice5(temp[4].substring(2)), setAnswer(temp[4].substring(2))) : setChoice5(temp[4]))
+    + (temp[0][1] === '*' ? (setChoice1(temp[0].substring(2)), setAnswer(temp[0].substring(2)), setCorrectButton('1')) : setChoice1(temp[0]))
+    + (temp[1][1] === '*' ? (setChoice2(temp[1].substring(2)), setAnswer(temp[1].substring(2)), setCorrectButton('2')) : setChoice2(temp[1]))
+    + (temp[2][1] === '*' ? (setChoice3(temp[2].substring(2)), setAnswer(temp[2].substring(2)), setCorrectButton('3')) : setChoice3(temp[2]))
+    + (temp[3][1] === '*' ? (setChoice4(temp[3].substring(2)), setAnswer(temp[3].substring(2)), setCorrectButton('4')) : setChoice4(temp[3]))
+    + (temp[4][1] === '*' ? (setChoice5(temp[4].substring(2)), setAnswer(temp[4].substring(2)), setCorrectButton('5')) : setChoice5(temp[4]))
     + setCounter(counter + 1);
   }
   
@@ -75,25 +83,49 @@ function WebApps() {
     let temp = choices[counter].split(',');
     return setQuestion(questions[counter]) 
     + setCounter(counter + 1) 
-    + (temp[0][1] === '*' ? (setChoice1(temp[0].substring(2)), setAnswer(temp[0].substring(2))) : setChoice1(temp[0]))
-    + (temp[1][1] === '*' ? (setChoice2(temp[1].substring(2)), setAnswer(temp[1].substring(2))) : setChoice2(temp[1]))
-    + (temp[2][1] === '*' ? (setChoice3(temp[2].substring(2)), setAnswer(temp[2].substring(2))) : setChoice3(temp[2]))
-    + (temp[3][1] === '*' ? (setChoice4(temp[3].substring(2)), setAnswer(temp[3].substring(2))) : setChoice4(temp[3]))
-    + (temp[4][1] === '*' ? (setChoice5(temp[4].substring(2)), setAnswer(temp[4].substring(2))) : setChoice5(temp[4]))
-    + console.log(counter);
+    + (temp[0][1] === '*' ? (setChoice1(temp[0].substring(2)), setAnswer(temp[0].substring(2)), setCorrectButton('1')) : setChoice1(temp[0]))
+    + (temp[1][1] === '*' ? (setChoice2(temp[1].substring(2)), setAnswer(temp[1].substring(2)), setCorrectButton('2')) : setChoice2(temp[1]))
+    + (temp[2][1] === '*' ? (setChoice3(temp[2].substring(2)), setAnswer(temp[2].substring(2)), setCorrectButton('3')) : setChoice3(temp[2]))
+    + (temp[3][1] === '*' ? (setChoice4(temp[3].substring(2)), setAnswer(temp[3].substring(2)), setCorrectButton('4')) : setChoice4(temp[3]))
+    + (temp[4][1] === '*' ? (setChoice5(temp[4].substring(2)), setAnswer(temp[4].substring(2)), setCorrectButton('5')) : setChoice5(temp[4]))
+    + console.log(counter)
+    + setButtonColor1('#04AA6D')
+    + setButtonColor2('#04AA6D')
+    + setButtonColor3('#04AA6D')
+    + setButtonColor4('#04AA6D')
+    + setButtonColor5('#04AA6D')
+    + setDisabled(false);
   }
 
-  function checkAnswer(choice) {
+  function checkAnswer(choice, selected_button) {
     console.log(correct_answer);
     console.log(choice);
-    if (correct_answer === choice) {
-      alert('correct');
-    }
-    else {
-      alert('incorrect');
-    }
+    return setDisabled(true)
+    + (setButtonColor1('#AAAAAA'), setButtonColor2('#AAAAAA'), setButtonColor3('#AAAAAA'), setButtonColor4('#AAAAAA'), setButtonColor5('#AAAAAA'))
+    // + (correct_answer !== choice && button === 'button_1' ? (setButtonColor1('#AAAAAA'), setButtonColor2('#AAAAAA'), setButtonColor3('#AAAAAA'), setButtonColor4('#AAAAAA'), setButtonColor5('#AAAAAA')) : null)
+    // + (correct_answer !== choice && button === 'button_2' ? (setButtonColor1('#AAAAAA'), setButtonColor2('#AAAAAA'), setButtonColor3('#AAAAAA'), setButtonColor4('#AAAAAA'), setButtonColor5('#AAAAAA')) : null)
+    // + (correct_answer !== choice && button === 'button_3' ? (setButtonColor1('#AAAAAA'), setButtonColor2('#AAAAAA'), setButtonColor3('#AAAAAA'), setButtonColor4('#AAAAAA'), setButtonColor5('#AAAAAA')) : null)
+    // + (correct_answer !== choice && button === 'button_4' ? (setButtonColor1('#AAAAAA'), setButtonColor2('#AAAAAA'), setButtonColor3('#AAAAAA'), setButtonColor4('#AAAAAA'), setButtonColor5('#AAAAAA')) : null)
+    // + (correct_answer !== choice && button === 'button_5' ? (setButtonColor1('#AAAAAA'), setButtonColor2('#AAAAAA'), setButtonColor3('#AAAAAA'), setButtonColor4('#AAAAAA'), setButtonColor5('#AAAAAA')) : null)
+    + (correct_button === '1' ? setButtonColor1('#04AA6D') : null)
+    + (correct_button === '2' ? setButtonColor2('#04AA6D') : null)
+    + (correct_button === '3' ? setButtonColor3('#04AA6D') : null)
+    + (correct_button === '4' ? setButtonColor4('#04AA6D') : null)
+    + (correct_button === '5' ? setButtonColor5('#04AA6D') : null)
 
+    + ((selected_button !== correct_button) && (selected_button === '1') ? setButtonColor1('#FF0000'): null)
+    + ((selected_button !== correct_button) && (selected_button === '2') ? setButtonColor2('#FF0000'): null)
+    + ((selected_button !== correct_button) && (selected_button === '3') ? setButtonColor3('#FF0000'): null)
+    + ((selected_button !== correct_button) && (selected_button === '4') ? setButtonColor4('#FF0000'): null)
+    + ((selected_button !== correct_button) && (selected_button === '5') ? setButtonColor5('#FF0000'): null)
+
+    // + (button_selected === '1' ? setButtonColor1('#FF0000') : null)
+    // + (button_selected === '2' ? setButtonColor2('#FF0000') : null)
+    // + (button_selected === '3' ? setButtonColor3('#FF0000') : null)
+    // + (button_selected === '4' ? setButtonColor4('#FF0000') : null)
+    // + (button_selected === '5' ? setButtonColor5('#FF0000') : null);
   }
+
 
   //checkpoint
   return (
@@ -117,19 +149,19 @@ function WebApps() {
           {question_cluster ? (<h2 style={{textAlign: 'left', marginLeft: '10px'}}><br />{current_question}</h2>) : null}
           {question_cluster ? ( <div style={{textAlign: 'left', marginLeft: '10px'}} className={`${styles.button} ${styles.button}`}>
             <br />
-            <button onClick={() => checkAnswer(current_choice_1)}>{current_choice_1}</button>
+            <button style={{backgroundColor: buttonColor1}} disabled={disabled} onClick={() => {checkAnswer(current_choice_1, '1')}}>{current_choice_1}</button>
             <br />
             <br />
-            <button onClick={() => checkAnswer(current_choice_2)}>{current_choice_2}</button>
+            <button style={{backgroundColor: buttonColor2}} disabled={disabled} onClick={() => {checkAnswer(current_choice_2, '2');}}>{current_choice_2}</button>
             <br />
             <br />
-            <button onClick={() => checkAnswer(current_choice_3)}>{current_choice_3}</button>
+            <button style={{backgroundColor: buttonColor3}} disabled={disabled} onClick={() => {checkAnswer(current_choice_3, '3');}}>{current_choice_3}</button>
             <br />
             <br />
-            <button onClick={() => checkAnswer(current_choice_4)}>{current_choice_4}</button>
+            <button style={{backgroundColor: buttonColor4}} disabled={disabled} onClick={() => {checkAnswer(current_choice_4, '4');}}>{current_choice_4}</button>
             <br />
             <br />
-            <button onClick={() => checkAnswer(current_choice_5)} style={{marginBottom: '15px'}}>{current_choice_5}</button> </div>
+            <button style={{backgroundColor: buttonColor5, marginBottom: '15px'}} disabled={disabled} onClick={() => {checkAnswer(current_choice_5, '5');}}>{current_choice_5}</button> </div>
           ) : null}
         </div>
         {/* ---- */}
