@@ -1,8 +1,6 @@
 import React, {useState} from 'react';
 import styles from '../styles.module.css';
 
-// import text_file from '../../public/text_file.txt';
-
 function WebApps() {
   
   // -----------------------------------------------------------------
@@ -48,7 +46,6 @@ function WebApps() {
   const [buttonColor5, setButtonColor5] = useState('04AA6D');
   const [correct_answer, setAnswer] = useState('');
   const [correct_button, setCorrectButton] = useState('');
-  // const [selected_button, setSelectedButton] = useState('');
   const [disabled, setDisabled] = useState(false);
 
   // load questions text file data
@@ -102,11 +99,6 @@ function WebApps() {
     console.log(choice);
     return setDisabled(true)
     + (setButtonColor1('#AAAAAA'), setButtonColor2('#AAAAAA'), setButtonColor3('#AAAAAA'), setButtonColor4('#AAAAAA'), setButtonColor5('#AAAAAA'))
-    // + (correct_answer !== choice && button === 'button_1' ? (setButtonColor1('#AAAAAA'), setButtonColor2('#AAAAAA'), setButtonColor3('#AAAAAA'), setButtonColor4('#AAAAAA'), setButtonColor5('#AAAAAA')) : null)
-    // + (correct_answer !== choice && button === 'button_2' ? (setButtonColor1('#AAAAAA'), setButtonColor2('#AAAAAA'), setButtonColor3('#AAAAAA'), setButtonColor4('#AAAAAA'), setButtonColor5('#AAAAAA')) : null)
-    // + (correct_answer !== choice && button === 'button_3' ? (setButtonColor1('#AAAAAA'), setButtonColor2('#AAAAAA'), setButtonColor3('#AAAAAA'), setButtonColor4('#AAAAAA'), setButtonColor5('#AAAAAA')) : null)
-    // + (correct_answer !== choice && button === 'button_4' ? (setButtonColor1('#AAAAAA'), setButtonColor2('#AAAAAA'), setButtonColor3('#AAAAAA'), setButtonColor4('#AAAAAA'), setButtonColor5('#AAAAAA')) : null)
-    // + (correct_answer !== choice && button === 'button_5' ? (setButtonColor1('#AAAAAA'), setButtonColor2('#AAAAAA'), setButtonColor3('#AAAAAA'), setButtonColor4('#AAAAAA'), setButtonColor5('#AAAAAA')) : null)
     + (correct_button === '1' ? setButtonColor1('#04AA6D') : null)
     + (correct_button === '2' ? setButtonColor2('#04AA6D') : null)
     + (correct_button === '3' ? setButtonColor3('#04AA6D') : null)
@@ -118,12 +110,6 @@ function WebApps() {
     + ((selected_button !== correct_button) && (selected_button === '3') ? setButtonColor3('#FF0000'): null)
     + ((selected_button !== correct_button) && (selected_button === '4') ? setButtonColor4('#FF0000'): null)
     + ((selected_button !== correct_button) && (selected_button === '5') ? setButtonColor5('#FF0000'): null)
-
-    // + (button_selected === '1' ? setButtonColor1('#FF0000') : null)
-    // + (button_selected === '2' ? setButtonColor2('#FF0000') : null)
-    // + (button_selected === '3' ? setButtonColor3('#FF0000') : null)
-    // + (button_selected === '4' ? setButtonColor4('#FF0000') : null)
-    // + (button_selected === '5' ? setButtonColor5('#FF0000') : null);
   }
 
 
