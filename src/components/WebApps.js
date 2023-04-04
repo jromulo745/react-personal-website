@@ -53,6 +53,8 @@ function WebApps() {
   .then((response) => response.text())
   .then(data => {
     questions = data.split('\n');
+    questions.pop(); // since my arrays are delineated by newlines
+    console.log(questions);
   })
 
   // load choices text file data
@@ -60,6 +62,7 @@ function WebApps() {
   .then((response) => response.text())
   .then(data => {
     choices = data.split('\n');
+    choices.pop(); // since my arrays are delineated by newlines
   });
 
   function handleClick() {
