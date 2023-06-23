@@ -1,0 +1,45 @@
+Objective 1.1 focuses on the following concepts: battery, keyboard, random-access memory (RAM), storage drives, wireless cards, and physical privacy and security components.
+Many laptops also have storage drive and wireless LEDs, which can tell you more about the status of the laptop when you can’t see anything on the screen. Use them!
+Power is crucial! When troubleshooting, go through the entire power system step by step, including the power button, battery, DC jack, AC adapter, and AC outlet.
+Use the Fn key in combination with the F1–F12 function keys to configure many things, including media options, Wi-Fi access, brightness, the touchpad, and an external monitor.
+If available, press the Num Lock key to enable/disable the numeric keypad on a laptop. If the Num Lock indicator light is on, then the numeric key is enabled.
+The Basic Input/Output System (BIOS) is the underlying setup system for a laptop or PC. We’ll discuss that and the Unified Extensible Firmware Interface (UEFI) more in Chapter 16, “Motherboards and Add-on Cards.”
+ESD can occur when two objects with different voltages come into contact with each other.
+Another type of pointing device is a pointing stick, known within Lenovo laptops as the TrackPoint. This device is implemented as a small rubber cap (that looks like an eraser head) just above the B key or as two buttons that work essentially the same as a touchpad’s buttons.
+Know that SODIMM DDR3 has 204 pins and SODIMM DDR4 has 260 pins. Understand the pin format differences between them and standard DIMMs (used in PCs).
+Storage drives are often referred to as “hard drives.” While this term is probably not accurate for a drive being used in a laptop today, it is still a commonly used term that you should be ready for.
+Know that laptop storage drive types include SSD, magnetic disk, and hybrid. Also, be aware that they have either 2.5- or 1.8-inch form factors.
+Be careful with M.2 drives. They create a lot of heat, and in a laptop’s tight environment, overheating is a possibility.
+If a laptop can’t connect to a wireless network, try pressing the Wi-Fi button—either a button associated with a function key or a standalone button near the keyboard.
+Know the various ways that a laptop could communicate with other computers, including wired and wireless Ethernet, Bluetooth, and cellular WAN connections.
+Turning on airplane mode will disable wireless transmissions such as NFC; however, it can also disable your ability to connect to Wi-Fi or send/receive calls. Remember this for troubleshooting purposes!
+Know that you can increase the security for your laptop, but there is never a 100% secure solution because any security technique can be bypassed given time, persistence, and ingenuity. So, for example, a cable lock can help, but don’t rely solely on that—or on any other single security precaution.
+Objective 1.2 focuses on the following concepts: LCD, IPS, TN, VA, OLED, mobile display components, Wi-Fi antenna connector/placement, camera/webcam, microphone, touch screen/digitizer, and inverter.
+The CompTIA A+ objectives list important concepts that you need to know for the exam, but the list is not finite. By this, I mean that there might be other associated technologies that are not listed but that you might be tested on. So, at times, I add content to this book that goes further than the listed objectives. Be ready to study beyond the objectives to fully prepare for the exam—and for the real world.
+Know that a screen inverter’s job is to convert DC voltage from the motherboard into AC voltage to be sent to the backlight.
+Warning! The inverter should not be handled if the laptop is on! Incorrect handling could result in personal injury. Be sure to turn off and unplug the laptop and remove the battery before removing an inverter.
+As you can guess, LED and OLED screens do not suffer as many failures as CCFL-based LCDs do, mainly because LEDs and OLEDs do not incorporate (or need) an inverter or a lamp. Consider that when making technology purchases.
+Be prepared to have very small screwdrivers available. Laptop and mobile device repair kits often come with these types of screwdrivers. Also be prepared for more “proprietary” types of screws that require fewer common screwdrivers.
+Know where to find the webcam and microphone within a laptop display and know how to disable them.
+Be able to identify M.2 and Mini PCIe cards by name and by sight.
+Objective 1.3 focuses on the following concepts: wired connection types such as Micro-USB, Mini-USB, USB, USB-C, Lightning, and serial interfaces; wireless connectivity such as NFC, Bluetooth, and hotspots; and accessories such as touch pens, headsets, speakers, webcams, docking station port replicators, and track-pads/drawing pads.
+Know your mobile device ports and connectors. Remember that Android devices generally use USB-C (with older ones using Micro-USB), and iOS-based devices use USB-C or Lightning.
+Understand the difference between configuring USB tethering (which is wired) and creating a mobile hotspot (which is wireless).
+NFC is used for close-proximity transactions, such as contactless payments.
+Note the difference: A laptop is placed, or “docked,” into a docking station. In contrast, a port replicator is connected to a laptop simply to provide additional ports.
+Objective 1.4 concentrates on the following concepts: wireless/cellular technologies, Bluetooth setup, location services, mobile device management (MDM) and mobile application management (MAM), email configuration, and mobile device synchronization.
+For simplicity, most of the time I use the term cellular to refer to smartphone connectivity to a telecommunications provider, meaning 3G, 4G, 5G, and so on.
+Understand how to connect to a Wi-Fi network in Android, iOS, and iPadOS.
+Know the CompTIA process for configuring Bluetooth: 1. Enable Bluetooth; 2. Enable pairing; 3. Find a device for pairing; 4. Enter the appropriate PIN code; 5. Test connectivity
+IMAP 143 993 Know the email protocols/ports: SMTP = 25/465/587; POP3 = 110/995, IMAP = 143/993.
+Another protocol you might implement when setting up secure email is S/MIME (Secure/Multipurpose Internet Mail Extensions). This is used for authentication and message integrity and is built into some email clients.
+Know the different cellular standards and that 5G can transmit at 20 Gbps.
+PRL updates help you get better coverage by keeping your device on preferred networks.
+Do not attempt a radio firmware (baseband) update if your phone does not require it. A faulty update can easily make the phone inoperable.
+Corporate access policies can also be controlled by location data. For example, geofencing, which uses location-based services, can trigger an action when a mobile device enters or exits a specific geographic area called a geofence.
+Know that GPS technology is integrated into mobile devices to help a user navigate while driving (among other things) but that it will be useless if location services is disabled.
+You might also opt for a service such as Nextcloud, which you can run locally on your own server, as well as connect to in the cloud. Check it out!
+Keep in mind that you might also back up your data, but this is different from synchronization. For example, you might back up an Android-based device’s apps, call history, contacts, device settings, SMS text messages, and other items that are normally stored locally. You could back up this data to a server on the cloud owned by the manufacturer of the mobile device, or you could use a separate service, such as Google Drive. Either way, this is done separately from synchronization.
+Exchange ActiveSync can be used to synchronize email, contacts, and calendars between a variety of devices (iOS-based devices, Windows devices, etc.) with Microsoft Exchange Server.
+As of the writing of this book, if you use Android and are using the smartphone only (with no vehicle screen), the GPS-based navigation software is simply known as Maps or, if enabled, Google Assistant Driving Mode. If used in conjunction with the vehicle’s screen, it is known as Android Auto.
+Understand that MDM is software that is used to update and secure mobile devices from a central location. MAM focuses on managing specific corporate mobile applications.

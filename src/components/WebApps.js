@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import styles from '../styles.module.css';
+import ExamAlerts from './WebAppComponents/ExamAlerts';
 
 function WebApps() {
   
@@ -119,12 +120,18 @@ function WebApps() {
   //checkpoint
   return (
     <div className="banner_box banner">
+
+      {/* --------------------------------------------------------------- */}
+
       <h2 style={{marginBottom: '5px'}}>File Character Counter</h2>
       <div className="container">
         <div className='item' style={{backgroundImage: 'none', backgroundColor: '#333333'}}>
           <input style={hover_style} className="box" type="file" onChange={handleFileInputChange} />
         </div>
       </div>
+
+      {/* --------------------------------------------------------------- */}
+
       <h2 style={{marginTop: '5px', marginBottom: '-2px'}}>IT Tester</h2>
       <div className="container">
         {/* ---- */}
@@ -155,6 +162,13 @@ function WebApps() {
         </div>
         {/* ---- */}
       </div>
+
+      {/* --------------------------------------------------------------- */}
+
+      <ExamAlerts />
+
+      {/* --------------------------------------------------------------- */}
+
     </div>
   );
 }
