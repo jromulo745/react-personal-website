@@ -6,7 +6,7 @@ import styles from '../../styles.module.css';
 function ExamAlerts() {
 
   // -----------------------------------------------------------------
-
+  // comment line strictly to rebuild aws connection
   let questions;
   let choices;
   const [counter, setCounter] = useState(0);
