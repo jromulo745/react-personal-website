@@ -36,13 +36,13 @@ function ExamAlerts() {
     return showQuestion(true) 
     + shownNextButton(true)
     + setQuestion(questions[counter])
+    + setCounter(counter + 1);
   }
   
   function nextQuestion() {
-
     return setQuestion(questions[counter]) 
     + setCounter(counter + 1) 
-    + console.log(counter)
+    + console.log(counter);
   }
 
 
