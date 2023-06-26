@@ -1,11 +1,10 @@
 import React, {useState} from 'react';
 import styles from '../styles.module.css';
 import ExamAlerts from './WebAppComponents/ExamAlerts';
+import Tester from './WebAppComponents/IT-Tester';
 
 function WebApps() {
   
-  // -----------------------------------------------------------------
-
   const hover_style = {
     cursor: 'pointer',
   };
@@ -166,6 +165,10 @@ function WebApps() {
       {/* --------------------------------------------------------------- */}
 
       <ExamAlerts />
+
+      {/* --------------------------------------------------------------- */}
+
+      <Tester />
 
       {/* --------------------------------------------------------------- */}
 
