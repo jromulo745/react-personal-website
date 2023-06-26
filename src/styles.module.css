@@ -59,11 +59,17 @@ img {
   box-shadow: 0 9px #999;
 }
 
+.button button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 /*---------------------------button-no-style-----------------------*/
 
 #noStyle{
   all: revert;
-  margin-left: 2px;
+  margin-left: 10px;
 }
 
 /*------------------------navbar section---------------------------*/

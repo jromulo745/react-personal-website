@@ -4,20 +4,6 @@ import styles from '../../styles.module.css';
 function Tester() {
 
   // -----------------------------------------------------------------
-  
-
-  function validate(e) {
-    e.preventDefault();
-    
-    const answer = document.getElementById("answer").value;
-    let valid = "Josh";
-    
-    if (answer === valid) {
-      alert('yay');
-    }
-  }
-
-  // -----------------------------------------------------------------
 
   let questions;
   let choices;
@@ -26,19 +12,19 @@ function Tester() {
   const [question_cluster, showQuestion] = useState(false);
   const [next_button, shownNextButton] = useState(false);
   const [correct_answer, setAnswer] = useState('');
-  const [disabled, setDisabled] = useState(false);
+  const [disabled, setDisabled] = useState(true);
+  const [disabledSubmit, setSubmitDisabled] = useState(false);
 
   // load questions text file data
-  fetch('/multiple-choice-explanation-template-quiz/questions.txt')
+  fetch('/fill-in-tester/questions.txt')
   .then((response) => response.text())
   .then(data => {
     questions = data.split('\n');
     questions.pop(); // since my arrays are delineated by newlines
-    console.log(questions);
   })
 
   // load choices text file data
-  fetch('/multiple-choice-explanation-template-quiz/choices.txt')
+  fetch('/fill-in-tester/answers.txt')
   .then((response) => response.text())
   .then(data => {
     choices = data.split('\n');
@@ -49,20 +35,39 @@ function Tester() {
     return showQuestion(true) 
     + shownNextButton(true)
     + setQuestion(questions[counter])
-    + setCounter(counter + 1);
+    + setAnswer(choices[counter])
+    + setDisabled(true)
+    + setSubmitDisabled(false);
   }
 
   function nextQuestion() {
-    return setQuestion(questions[counter])
-    + setCounter(counter + 1) 
-    + setDisabled(false);
+    return + setQuestion(questions[counter])
+    + setAnswer(choices[counter])
+    + setDisabled(true)
+    + setSubmitDisabled(false);
   }
 
-  function checkAnswer(choice, selected_button) {
-    console.log(correct_answer);
-    console.log(choice);
-    return setDisabled(true);
+  // -----------------------------------------------------------------
+
+   function validate(e) {
+    e.preventDefault();
+
+    const answer = document.getElementById("answer").value;
+    
+    if (answer === correct_answer) {
+      alert('yay');
+    }
+    else {
+      alert('wrong');
+    }
+    
+    console.log(choices[counter]);
+    return setCounter(counter + 1)
+    + setDisabled(false)
+    + setSubmitDisabled(true);
   }
+
+  // -----------------------------------------------------------------
 
   //checkpoint
   return (
@@ -78,13 +83,13 @@ function Tester() {
             {/* begin test button; null if next button true and content if false */}
             {next_button ? null : (<button style={{marginBottom: '10px', marginTop: '5px'}} onClick={handleClick}>Begin Test</button>)}
             {/* next button */}
-            {next_button ? (<button style={{marginBottom: '-10px', marginTop: '5px'}} onClick ={nextQuestion}>Next Question</button>) : null}
+            {next_button ? (<button style={{marginBottom: '-10px', marginTop: '5px'}} onClick ={nextQuestion} disabled={disabled}>Next Question</button>) : null}
           </div>
           {question_cluster ? (<h2 style={{textAlign: 'left', marginLeft: '10px'}}><br />{current_question}</h2>) : null}
           {question_cluster ? ( <div style={{textAlign: 'left', marginLeft: '10px'}} className={`${styles.button} ${styles.button}`}>
             <form>
                 <input style={{marginTop: '25px'}} type="text" name="answer" id="answer"></input>
-                <button id={styles["noStyle"]} onClick={validate}>Submit</button>
+                <button id={styles["noStyle"]} onClick={validate} disabled={disabledSubmit}>Submit</button>
               </form>
            </div>
           ) : null}
