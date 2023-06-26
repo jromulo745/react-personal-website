@@ -11,7 +11,7 @@ function Tester() {
     
     const answer = document.getElementById("answer").value;
     let valid = "Josh";
-
+    
     if (answer === valid) {
       alert('yay');
     }
