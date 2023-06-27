@@ -13,4 +13,9 @@
  Mobile hotspot, IoT, CYOD, IR, *NFC,
  Proprietary vendor-specific connector, Accessories, IP codes, *Tethering, None of the listed,
  Connect an external monitor so that the images on the screen will be bigger., Configure a drawing pad to work with the smartphone., *Set up a touch pen to access the screen directly., Add an external touchpad to the device., None of the listed,
+ FTP, Telnet, *SSH , HTTPS, None of the listed,
+ TCP, RDP, *UDP, DHCP, All of the listed,
+ 53 and 68, 80 and 443, 110 and 995, *143 and 993, None of the listed,
+ POP3, FTP, *SMTP, SNMP, None of the listed,
+ *67, 22, 995, 3389, None of the listed,
  

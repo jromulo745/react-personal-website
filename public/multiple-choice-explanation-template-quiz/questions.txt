@@ -13,3 +13,8 @@ You are required to add long-term storage to a smartphone. Which type would you 
 The organization you work for allows employees to work using their own mobile devices in a BYOD manner. You have been tasked with setting up the devices so that they can “beam” information back and forth between each other. What is this known as?
 Which of the following can be useful in areas where a smartphone has cellular access but a PC (or laptop) cannot connect to the Internet?
 A user has asked you to provide her with a more accurate way of manipulating her smartphone screen. She is part of a mobile sales force and needs to be able to work quickly and efficiently. Which of the following is the easiest and best solution?
+Which protocol uses port 22?
+Which of these would be used for streaming media?
+Which ports are used by the IMAP protocol?
+A user can receive email but cannot send any. Which protocol is not configured properly?
+Which of the following is the default inbound port of a DHCPv4 server?
