@@ -15,8 +15,6 @@ udp/67
 udp/68
 tcp/80
 tcp/443
-tcp/110
-tcp/995
 udp/137
 tcp/139
 tcp/445
