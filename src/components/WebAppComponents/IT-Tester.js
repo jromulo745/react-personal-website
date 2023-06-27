@@ -14,6 +14,7 @@ function Tester() {
   const [correct_answer, setAnswer] = useState('');
   const [disabled, setDisabled] = useState(true);
   const [disabledSubmit, setSubmitDisabled] = useState(false);
+  const [disabledInput, setDisabledInput] = useState(false);
 
   // load questions text file data
   fetch('/fill-in-tester/questions.txt')
@@ -37,6 +38,7 @@ function Tester() {
     + setQuestion(questions[counter])
     + setAnswer(choices[counter])
     + setDisabled(true)
+    + setDisabled(false)
     + setSubmitDisabled(false);
   }
 
@@ -45,6 +47,7 @@ function Tester() {
     return + setQuestion(questions[counter])
     + setAnswer(choices[counter])
     + setDisabled(true)
+    + setDisabledInput(false)
     + setSubmitDisabled(false);
   }
 
@@ -65,6 +68,7 @@ function Tester() {
     console.log(choices[counter]);
     return setCounter(counter + 1)
     + setDisabled(false)
+    + setDisabledInput(true)
     + setSubmitDisabled(true)
   }
 
@@ -89,7 +93,7 @@ function Tester() {
           {question_cluster ? (<h2 style={{textAlign: 'left', marginLeft: '10px'}}><br />{current_question}</h2>) : null}
           {question_cluster ? ( <div style={{textAlign: 'left', marginLeft: '10px'}} className={`${styles.button} ${styles.button}`}>
             <form>
-                <input style={{marginTop: '25px'}} type="text" name="answer" id="answer"></input>
+                <input style={{marginTop: '25px'}} disabled={disabledInput} type="text" name="answer" id="answer"></input>
                 <button id={styles["noStyle"]} onClick={validate} disabled={disabledSubmit}>Submit</button>
               </form>
            </div>
