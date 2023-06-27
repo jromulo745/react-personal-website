@@ -1,0 +1,12 @@
+tcp/20
+tcp/21
+tcp/989
+tcp/990
+tcp/22
+tcp/23
+tcp/25
+tcp/587
+tcp/143
+tcp/993
+tcp/110
+tcp/995

@@ -41,6 +41,7 @@ function Tester() {
   }
 
   function nextQuestion() {
+    document.getElementById("answer").value = '';
     return + setQuestion(questions[counter])
     + setAnswer(choices[counter])
     + setDisabled(true)
@@ -55,16 +56,16 @@ function Tester() {
     const answer = document.getElementById("answer").value;
     
     if (answer === correct_answer) {
-      alert('yay');
+      alert('Correct!');
     }
     else {
-      alert('wrong');
+      alert('Wrong: The correct answer is this: ' + choices[counter]);
     }
     
     console.log(choices[counter]);
     return setCounter(counter + 1)
     + setDisabled(false)
-    + setSubmitDisabled(true);
+    + setSubmitDisabled(true)
   }
 
   // -----------------------------------------------------------------
