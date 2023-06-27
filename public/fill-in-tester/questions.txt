@@ -10,3 +10,18 @@ What is the network port for IMAP (unsecure)?
 What is the network port for IMAP (secure)?
 What is the network port for POP3 (unsecure)?
 What is the network port for POP3 (secure)?
+What is the network port for DNS?
+What is the network port for DHCP (server)?
+What is the network port for DHCP (client)?
+What is the network port for HTTP?
+What is the network port for HTTPS?
+What is the network port for POP3 (unsecure)?
+What is the network port for POP3 (secure)?
+What is the network port for SMB using NETBIOS name services (nbname)?
+What is the network port for SMB using NETBIOS session services (nbsession)?
+What is the network port for SMB direct (NETBIOS-less)
+What is the network port for SNMP (Queries)?
+What is the network port for SNMP (Traps)?
+What is the network port for LDAP (unsecure)?
+What is the network port for LDAP (secure - tcp/udp)?
+What is the network port for RDP?
