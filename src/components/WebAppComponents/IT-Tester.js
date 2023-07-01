@@ -25,31 +25,26 @@ function Tester() {
   const [disabledSubmit, setSubmitDisabled] = useState(false);
   const [disabledInput, setDisabledInput] = useState(false);
 
-  function getCombined() {
+  async function getCombined() {
     //load combined json data
-    return fetch('fill-in-tester/combined.json')
-    .then((res) => res.json())
-    .then((resJSON) => {
-      for (let i in resJSON) {
-        console.log(i, resJSON[i]);
-        questions.push(i);
-        choices.push(resJSON[i]);
+    const res = await fetch('fill-in-tester/combined.json');
+    const resJSON = await res.json();
+    for (let i in resJSON) {
+      console.log(i, resJSON[i]);
+      questions.push(i);
+      choices.push(resJSON[i]);
+    }
+    for (let i_1 = 0; i_1 < questions.length; i_1++) {
+      let random_number = getRandomIntInclusive(0, questions.length - 1);
+      while (used_numbers.includes(random_number) === true) {
+        random_number = getRandomIntInclusive(0, questions.length - 1);
       }
-
-      for (let i = 0; i < questions.length; i++) {
-        let random_number = getRandomIntInclusive(0, questions.length - 1);
-        while (used_numbers.includes(random_number) === true) {
-          random_number = getRandomIntInclusive(0, questions.length - 1);
-        }
-        used_numbers.push(random_number);
-        final_questions.push(questions[random_number]);
-        final_choices.push(choices[random_number]);
-      }
-
-      setFChoices(final_choices);
-      setFQuestions(final_questions);
-
-    })
+      used_numbers.push(random_number);
+      final_questions.push(questions[random_number]);
+      final_choices.push(choices[random_number]);
+    }
+    setFChoices(final_choices);
+    setFQuestions(final_questions);
   }
 
   function getRandomIntInclusive(min, max) {
