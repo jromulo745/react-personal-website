@@ -19,7 +19,7 @@ function Tester() {
   const [counter, setCounter] = useState(0);
   const [current_question, setQuestion] = useState('');
   const [question_cluster, showQuestion] = useState(false);
-  const [next_button, shownNextButton] = useState(false);
+  const [next_button, showNextButton] = useState(false);
   const [correct_answer, setAnswer] = useState('');
   const [disabled, setDisabled] = useState(true);
   const [disabledSubmit, setSubmitDisabled] = useState(false);
@@ -61,7 +61,7 @@ function Tester() {
   function handleClick() {
   
     return showQuestion(true) 
-    + shownNextButton(true)
+    + showNextButton(true)
     + setQuestion(fquestions[counter])
     + setAnswer(fchoices[counter])
     + setDisabled(false)
@@ -70,6 +70,7 @@ function Tester() {
 
   function nextQuestion() {
     document.getElementById("answer").value = '';
+    document.getElementById("answer").style.backgroundColor = "#FFFFFF";
     return + setQuestion(fquestions[counter])
     + setAnswer(fchoices[counter])
     + setDisabled(true)
@@ -86,9 +87,11 @@ function Tester() {
 
     if (answer === correct_answer) {
       alert('Correct!');
+      document.getElementById("answer").style.backgroundColor = "#078e2d";
     }
     else {
       alert('Wrong: The correct answer is this: ' + fchoices[counter]);
+      document.getElementById("answer").style.backgroundColor = "#930707";
     }
 
     return setCounter(counter + 1)
