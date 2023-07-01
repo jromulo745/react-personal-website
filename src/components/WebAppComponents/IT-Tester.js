@@ -25,26 +25,6 @@ function Tester() {
   const [disabledSubmit, setSubmitDisabled] = useState(false);
   const [disabledInput, setDisabledInput] = useState(false);
 
-  // function getQuestions() {
-  //   // load questions text file data
-  //   return fetch('/fill-in-tester/questions.txt')
-  //   .then((response) => response.text())
-  //   .then(data => {
-  //     questions = data.split('\n');
-  //     questions.pop(); // since my arrays are delineated by newlines
-  //   });
-  // }
-
-  // function getAnswers() {
-  //   // load choices text file data
-  //   return fetch('/fill-in-tester/answers.txt')
-  //   .then((response) => response.text())
-  //   .then(data => {
-  //     choices = data.split('\n');
-  //     choices.pop(); // since my arrays are delineated by newlines
-  //   });
-  // }
-
   function getCombined() {
     //load combined json data
     return fetch('fill-in-tester/combined.json')
@@ -73,11 +53,6 @@ function Tester() {
 
     })
   }
-
-  // function getQuestionsAndAnswers() {
-  //   // return Promise.all([getQuestions(), getAnswers()]);
-  //   return Promise.all([getCombined()]);
-  // }
 
   function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
@@ -125,7 +100,6 @@ function Tester() {
   }
 
   useEffect(() => {
-    // getQuestionsAndAnswers();
     getCombined();
   }, []);
 
