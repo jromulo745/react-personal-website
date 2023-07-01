@@ -35,8 +35,6 @@ function Tester() {
         questions.push(i);
         choices.push(resJSON[i]);
       }
-      // console.log(choices);
-      // console.log(questions);
 
       for (let i = 0; i < questions.length; i++) {
         let random_number = getRandomIntInclusive(0, questions.length - 1);
