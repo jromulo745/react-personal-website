@@ -20,7 +20,6 @@ function ExamAlerts() {
   .then(data => {
     questions = data.split('\n');
     questions.pop(); // since my arrays are delineated by newlines
-    console.log(questions);
   })
 
   // load choices text file data

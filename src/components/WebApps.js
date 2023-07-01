@@ -11,7 +11,6 @@ function WebApps() {
 
   function handleFileRead(event) {
     const content = event.target.result.toString();
-    console.log(content);
     let counter = 0;
     for (let i = 0; i < content.length; i++){
       counter++;
@@ -54,7 +53,6 @@ function WebApps() {
   .then(data => {
     questions = data.split('\n');
     questions.pop(); // since my arrays are delineated by newlines
-    console.log(questions);
   })
 
   // load choices text file data
@@ -88,7 +86,6 @@ function WebApps() {
     + (temp[2][1] === '*' ? (setChoice3(temp[2].substring(2)), setAnswer(temp[2].substring(2)), setCorrectButton('3')) : setChoice3(temp[2]))
     + (temp[3][1] === '*' ? (setChoice4(temp[3].substring(2)), setAnswer(temp[3].substring(2)), setCorrectButton('4')) : setChoice4(temp[3]))
     + (temp[4][1] === '*' ? (setChoice5(temp[4].substring(2)), setAnswer(temp[4].substring(2)), setCorrectButton('5')) : setChoice5(temp[4]))
-    + console.log(counter)
     + setButtonColor1('#04AA6D')
     + setButtonColor2('#04AA6D')
     + setButtonColor3('#04AA6D')
@@ -98,8 +95,6 @@ function WebApps() {
   }
 
   function checkAnswer(choice, selected_button) {
-    console.log(correct_answer);
-    console.log(choice);
     return setDisabled(true)
     + (setButtonColor1('#AAAAAA'), setButtonColor2('#AAAAAA'), setButtonColor3('#AAAAAA'), setButtonColor4('#AAAAAA'), setButtonColor5('#AAAAAA'))
     + (correct_button === '1' ? setButtonColor1('#04AA6D') : null)
