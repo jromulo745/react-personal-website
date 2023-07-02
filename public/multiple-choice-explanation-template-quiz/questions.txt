@@ -18,3 +18,8 @@ Which of these would be used for streaming media?
 Which ports are used by the IMAP protocol?
 A user can receive email but cannot send any. Which protocol is not configured properly?
 Which of the following is the default inbound port of a DHCPv4 server?
+What device protects a network from unwanted intrusion?
+Which of the following network devices moves frames of data between a source and destination, based on their MAC addresses?
+Which of the following network devices allows a remote device to obtain Ethernet data as well as electrical power?
+ Which of the following devices can be configured when accessed from a browser or SSH or similar configuration tool?
+Which of the following acts as a demarcation point for fiber optic services?

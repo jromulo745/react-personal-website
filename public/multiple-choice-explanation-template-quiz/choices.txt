@@ -18,4 +18,9 @@
  53 and 68, 80 and 443, 110 and 995, *143 and 993, None of the listed,
  POP3, FTP, *SMTP, SNMP, None of the listed,
  *67, 22, 995, 3389, None of the listed,
+ Switch, Router, Access point, *Firewall, All of the listed,
+ Hub, *Switch, Router, Modem, None of the listed,
+ PD, *PoE injector, Firewall, Router, None of the listed,
+ *Managed switch, Unmanaged switch, Patch panel, Network interface card, None of the listed,
+ SDN, *ONT, Patch panel, NIC, None of the listed,
  
