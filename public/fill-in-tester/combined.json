@@ -25,5 +25,25 @@
 "What is the network port for LDAP (secure - tcp/udp)?": "636",
 "What is the network port for RDP?": "tcp/3389",
 "How many pins does a SODIMM DDR3 module have?": "204",
-"How many pins does a SODIMM DDR4 module have?": "260"
+"How many pins does a SODIMM DDR4 module have?": "260",
+"For two computers to communicate, they must both use the same ________": "protocol",
+"____ sends email": "SMTP",
+"What does SMTP stand for?": "Simple Mail Transfer Protocol",
+"FTP allows computers to transfer files back and forth": "FTP",
+"What does FTP stand for": "File Transfer Protocol",
+"SSH enables the remote control of computers and enables data to be exchanged between computers on a secured channel": "SSH",
+"What does SSH stand for?": "Secure Shell",
+"______ provides remote access to other hosts using the command-line interface (CLI)": "Telnet",
+"What does Telnet stand for": "Telecommunication network",
+"____ is used to automatically assign IP addresses to hosts": "DHCP",
+"What does DHCP stand for?": "Dynamic Host Configuration Protocol",
+"It is better in many situations for servers and printers to use ______ addresses so you know exactly what the address is and so it won’t change.": "static",
+"By default, in a typical IPv4 network, the DHCP server needs to have inbound port __ open": "67",
+"In a typical IPv4 network, a DHCP client uses port __ to connect out to the DHCP server": "68",
+"What is the network port for DHCPv6 (server)": "udp/547",
+"What is the network port for DHCPv6 (client)": "udp/546",
+"DHCP is also sometimes referred to as BOOTP - short for _________ ________.": "Bootstrap Protocol",
+"___ is the group of servers on the Internet that translates domain names to IP addresses": "DNS",
+"What does DNS stand for?": "Domain Name System"
+
 }
