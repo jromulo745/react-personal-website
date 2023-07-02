@@ -31,11 +31,11 @@
 "What does SMTP stand for?": "Simple Mail Transfer Protocol",
 "___ allows computers to transfer files back and forth": "FTP",
 "What does FTP stand for": "File Transfer Protocol",
-"___ enables the remote control of computers and enables data to be exchanged between computers on a secured channel": "SSH",
+"___ enables the remote control of computers and enables data to be exchanged between computers on a secured channel.": "SSH",
 "What does SSH stand for?": "Secure Shell",
 "______ provides remote access to other hosts using the command-line interface (CLI)": "Telnet",
 "What does Telnet stand for": "Telecommunication network",
-"____ is used to automatically assign IP addresses to hosts": "DHCP",
+"____ is used to automatically assign IP addresses to hosts.": "DHCP",
 "What does DHCP stand for?": "Dynamic Host Configuration Protocol",
 "It is better in many situations for servers and printers to use ______ addresses so you know exactly what the address is and so it won’t change.": "static",
 "By default, in a typical IPv4 network, the DHCP server needs to have inbound port __ open": "67",
@@ -44,6 +44,13 @@
 "What is the network port for DHCPv6 (client)": "udp/546",
 "DHCP is also sometimes referred to as BOOTP - short for _________ ________.": "Bootstrap Protocol",
 "___ is the group of servers on the Internet that translates domain names to IP addresses": "DNS",
-"What does DNS stand for?": "Domain Name System"
-
+"What does DNS stand for?": "Domain Name System",
+"____ is used to access and maintain distributed directories of information (such as the kind involved with Microsoft domains). Microsoft refers to this a Active Directory (AD), and also directory services or domain services.": "LDAP",
+"What does LDAP stand for?": "Lightweight Directory Access Protocol",
+"To facilitate connections to remote computers and allow full remote control, Microsoft uses the Remote Desktop Connection program, which is based on ___.": "RDP",
+"What does RDP stand for?": "Remote Desktop Protocol",
+"The ___ protocol provides access to shared items such as files and printers": "SMB",
+"What does SMB stand for?": "Server Message Block",
+"____ is used as the standard for managing and monitoring devices on a network.": "SNMP",
+"What does SNMP stand for?": "Simple Network Management Protocol"
 }
