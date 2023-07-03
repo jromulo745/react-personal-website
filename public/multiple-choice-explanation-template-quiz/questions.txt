@@ -21,5 +21,10 @@ Which of the following is the default inbound port of a DHCPv4 server?
 What device protects a network from unwanted intrusion?
 Which of the following network devices moves frames of data between a source and destination, based on their MAC addresses?
 Which of the following network devices allows a remote device to obtain Ethernet data as well as electrical power?
- Which of the following devices can be configured when accessed from a browser or SSH or similar configuration tool?
+Which of the following devices can be configured when accessed from a browser or SSH or similar configuration tool?
 Which of the following acts as a demarcation point for fiber optic services?
+Which of the following would a company most likely use for authentication to a server room?
+Which standard can attain a data transfer rate of 1 Gbps over a wireless connection?
+Which of the following is often broken down into groups of channels including 1–5, 6–10, and 11?
+You are servicing a customer with a cable broadband Internet connection and an 802.11ac wireless network that is experiencing interference from a nearby office. The customer’s WAP is mounted to the ceiling. Which of the following is the easiest and best solution?
+Which wireless system is composed of readers and tags and can be used for access control, commerce, advertising, manufacturing, and agriculture?

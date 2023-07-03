@@ -23,4 +23,9 @@
  PD, *PoE injector, Firewall, Router, None of the listed,
  *Managed switch, Unmanaged switch, Patch panel, Network interface card, None of the listed,
  SDN, *ONT, Patch panel, NIC, None of the listed,
+ 802.11ac, Fixed wireless, *RFID, MIMO, None of the listed,
+ 802.11a, 802.11b, 802.11g, *802.11ac, 802.3ab,
+ 802.11ac, *2.4 GHz, 5 GHz, 802.11a, None of the listed,
+ Move the wireless access point to another location., Reconfigure the WAP to use 2.4 GHz instead of 5 GHz., *Change the broadcasting channel on the WAP to one that is not used by any neighbors., Recommend a long-range fixed wireless service., None of the listed,
+ 802.11ax, Wi-Fi 6, *RFID, FCC, None of the listed,
  
