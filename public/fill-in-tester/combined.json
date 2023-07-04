@@ -34,7 +34,7 @@
 "___ enables the remote control of computers and enables data to be exchanged between computers on a secured channel.": "SSH",
 "What does SSH stand for?": "Secure Shell",
 "______ provides remote access to other hosts using the command-line interface (CLI).": "Telnet",
-"What does Telnet stand for": "Telecommunication network",
+"What does Telnet stand for?": "Telecommunication network",
 "____ is used to automatically assign IP addresses to hosts.": "DHCP",
 "What does DHCP stand for?": "Dynamic Host Configuration Protocol",
 "It is better in many situations for servers and printers to use ______ addresses so you know exactly what the address is and so it won’t change.": "static",
@@ -83,5 +83,7 @@
 "What 802.11 standard is this: Maximum data rate: 54 mbps; Frequency: 2.4 GHz": "802.11g",
 "What 802.11 standard is this: Maximum data rate: 600 mbps; Frequency: 5 and/or 2.4 GHz": "802.11n",
 "What 802.11 standard is this: Maximum data rate: 3.5 gbps; Frequency: 5 GHz": "802.11ac",
-"What 802.11 standard is this: Maximum data rate: 9.6 gbps; Frequency: 5 and 2.4 GHz": "802.11ax"
-}
+"What 802.11 standard is this: Maximum data rate: 9.6 gbps; Frequency: 5 and 2.4 GHz": "802.11ax",
+"What is another name for 802.11n?": "Wi-Fi 4",
+"What is another name for 802.11ac": "Wi-Fi 5",
+"What frequency does Bluetooth use?": "2.4 GHz"
