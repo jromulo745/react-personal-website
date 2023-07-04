@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from '../styles.module.css';
 import ExamAlerts from './WebAppComponents/ExamAlerts';
 import Tester from './WebAppComponents/IT-Tester';
@@ -27,8 +27,13 @@ function WebApps() {
 
   // -----------------------------------------------------------------
 
-  let questions;
-  let choices;
+  let questions = [];
+  let choices = [];
+
+  let final_questions = [];
+  let final_choices = [];
+  let used_numbers = [];
+
   const [counter, setCounter] = useState(0);
   const [current_question, setQuestion] = useState('');
   const [question_cluster, showQuestion] = useState(false);
@@ -47,55 +52,66 @@ function WebApps() {
   const [correct_button, setCorrectButton] = useState('');
   const [disabled, setDisabled] = useState(false);
 
-  // // load questions text file data
-  // fetch('/multiple-choice-explanation-template-quiz/questions.txt')
-  // .then((response) => response.text())
-  // .then(data => {
-  //   questions = data.split('\n');
-  //   questions.pop(); // since my arrays are delineated by newlines
-  // })
+  const [fquestions, setFQuestions] = useState([]);
+  const [fchoices, setFChoices] = useState([]);
 
-  // // load choices text file data
-  // fetch('/multiple-choice-explanation-template-quiz/choices.txt')
-  // .then((response) => response.text())
-  // .then(data => {
-  //   choices = data.split('\n');
-  //   choices.pop(); // since my arrays are delineated by newlines
-  // });
+
+  function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) + min); // The maximum is inclusive and the minimum is inclusive
+  }
 
   async function getCombined() {
     //load questions data
     const res = await fetch('/multiple-choice-explanation-template-quiz/multiple-combined.json')
     const resJSON = await res.json();
-  
-  
+
+    for (let i in resJSON) {
+      console.log(i, resJSON[i]);
+      questions.push(i);
+      choices.push(resJSON[i]);
+    }
+    for (let i_1 = 0; i_1 < questions.length; i_1++) {
+      let random_number = getRandomIntInclusive(0, questions.length - 1);
+      while (used_numbers.includes(random_number) === true) {
+        random_number = getRandomIntInclusive(0, questions.length - 1);
+      }
+      used_numbers.push(random_number);
+      final_questions.push(questions[random_number]);
+      final_choices.push(choices[random_number]);
+    }
+    setFChoices(final_choices);
+    setFQuestions(final_questions);
   }
 
-
-
   function handleClick() {
-    let temp = choices[counter].split(',');
+    let temp = fchoices[counter].toString().split(',');
+
+    console.log('dude: ' + temp[0][1]);
+    console.log(temp[0]);
 
     return showQuestion(true) 
     + shownNextButton(true)
-    + setQuestion(questions[counter])
-    + (temp[0][1] === '*' ? (setChoice1(temp[0].substring(2)), setAnswer(temp[0].substring(2)), setCorrectButton('1')) : setChoice1(temp[0]))
-    + (temp[1][1] === '*' ? (setChoice2(temp[1].substring(2)), setAnswer(temp[1].substring(2)), setCorrectButton('2')) : setChoice2(temp[1]))
-    + (temp[2][1] === '*' ? (setChoice3(temp[2].substring(2)), setAnswer(temp[2].substring(2)), setCorrectButton('3')) : setChoice3(temp[2]))
-    + (temp[3][1] === '*' ? (setChoice4(temp[3].substring(2)), setAnswer(temp[3].substring(2)), setCorrectButton('4')) : setChoice4(temp[3]))
-    + (temp[4][1] === '*' ? (setChoice5(temp[4].substring(2)), setAnswer(temp[4].substring(2)), setCorrectButton('5')) : setChoice5(temp[4]))
+    + setQuestion(fquestions[counter])
+    + (temp[0][0] === '*' ? (setChoice1(temp[0].substring(1)), setAnswer(temp[0].substring(2)), setCorrectButton('1')) : setChoice1(temp[0]))
+    + (temp[1][0] === '*' ? (setChoice2(temp[1].substring(1)), setAnswer(temp[1].substring(2)), setCorrectButton('2')) : setChoice2(temp[1]))
+    + (temp[2][0] === '*' ? (setChoice3(temp[2].substring(1)), setAnswer(temp[2].substring(2)), setCorrectButton('3')) : setChoice3(temp[2]))
+    + (temp[3][0] === '*' ? (setChoice4(temp[3].substring(1)), setAnswer(temp[3].substring(2)), setCorrectButton('4')) : setChoice4(temp[3]))
+    + (temp[4][0] === '*' ? (setChoice5(temp[4].substring(1)), setAnswer(temp[4].substring(2)), setCorrectButton('5')) : setChoice5(temp[4]))
     + setCounter(counter + 1);
   }
   
   function nextQuestion() {
-    let temp = choices[counter].split(',');
-    return setQuestion(questions[counter]) 
+    let temp = fchoices[counter].toString().split(',');
+    
+    return setQuestion(fquestions[counter]) 
     + setCounter(counter + 1) 
-    + (temp[0][1] === '*' ? (setChoice1(temp[0].substring(2)), setAnswer(temp[0].substring(2)), setCorrectButton('1')) : setChoice1(temp[0]))
-    + (temp[1][1] === '*' ? (setChoice2(temp[1].substring(2)), setAnswer(temp[1].substring(2)), setCorrectButton('2')) : setChoice2(temp[1]))
-    + (temp[2][1] === '*' ? (setChoice3(temp[2].substring(2)), setAnswer(temp[2].substring(2)), setCorrectButton('3')) : setChoice3(temp[2]))
-    + (temp[3][1] === '*' ? (setChoice4(temp[3].substring(2)), setAnswer(temp[3].substring(2)), setCorrectButton('4')) : setChoice4(temp[3]))
-    + (temp[4][1] === '*' ? (setChoice5(temp[4].substring(2)), setAnswer(temp[4].substring(2)), setCorrectButton('5')) : setChoice5(temp[4]))
+    + (temp[0][0] === '*' ? (setChoice1(temp[0].substring(1)), setAnswer(temp[0].substring(2)), setCorrectButton('1')) : setChoice1(temp[0]))
+    + (temp[1][0] === '*' ? (setChoice2(temp[1].substring(1)), setAnswer(temp[1].substring(2)), setCorrectButton('2')) : setChoice2(temp[1]))
+    + (temp[2][0] === '*' ? (setChoice3(temp[2].substring(1)), setAnswer(temp[2].substring(2)), setCorrectButton('3')) : setChoice3(temp[2]))
+    + (temp[3][0] === '*' ? (setChoice4(temp[3].substring(1)), setAnswer(temp[3].substring(2)), setCorrectButton('4')) : setChoice4(temp[3]))
+    + (temp[4][0] === '*' ? (setChoice5(temp[4].substring(1)), setAnswer(temp[4].substring(2)), setCorrectButton('5')) : setChoice5(temp[4]))
     + setButtonColor1('#04AA6D')
     + setButtonColor2('#04AA6D')
     + setButtonColor3('#04AA6D')
@@ -120,6 +136,9 @@ function WebApps() {
     + ((selected_button !== correct_button) && (selected_button === '5') ? setButtonColor5('#FF0000'): null)
   }
 
+  useEffect(() => {
+    getCombined();
+  }, []);
 
   //checkpoint
   return (
