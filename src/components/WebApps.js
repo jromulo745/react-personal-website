@@ -86,7 +86,25 @@ function WebApps() {
   }
 
   function handleClick() {
-    let temp = fchoices[counter].toString().split(',');
+    let initial = fchoices[counter].toString().split(',');
+    let temp = [];
+    let inner_used_numbers = [];
+  
+    console.log('vrooooo');
+    for (let i = 0; i < initial.length; i++) {
+      let inner_random_number = getRandomIntInclusive(0, initial.length - 1);
+      while (inner_used_numbers.includes(inner_random_number) === true) {
+        inner_random_number = getRandomIntInclusive(0, initial.length - 1);
+      }
+      inner_used_numbers.push(inner_random_number);
+      temp.push(initial[inner_random_number]);
+      // console.log('bro: ' + initial[i]);
+      // console.log('temp: ' + temp[i]);
+      // console.log(initial[inner_random_number]);
+    }
+
+    // console.log('heeeeere');
+    // console.log(temp);
 
     return showQuestion(true) 
     + shownNextButton(true)
@@ -100,7 +118,22 @@ function WebApps() {
   }
   
   function nextQuestion() {
-    let temp = fchoices[counter].toString().split(',');
+    let initial = fchoices[counter].toString().split(',');
+    let temp = [];
+    let inner_used_numbers = [];
+  
+    console.log('vrooooo');
+    for (let i = 0; i < initial.length; i++) {
+      let inner_random_number = getRandomIntInclusive(0, initial.length - 1);
+      while (inner_used_numbers.includes(inner_random_number) === true) {
+        inner_random_number = getRandomIntInclusive(0, initial.length - 1);
+      }
+      inner_used_numbers.push(inner_random_number);
+      temp.push(initial[inner_random_number]);
+      // console.log('bro: ' + initial[i]);
+      // console.log('temp: ' + temp[i]);
+      // console.log(initial[inner_random_number]);
+    }
 
     return setQuestion(fquestions[counter]) 
     + setCounter(counter + 1) 
