@@ -47,21 +47,31 @@ function WebApps() {
   const [correct_button, setCorrectButton] = useState('');
   const [disabled, setDisabled] = useState(false);
 
-  // load questions text file data
-  fetch('/multiple-choice-explanation-template-quiz/questions.txt')
-  .then((response) => response.text())
-  .then(data => {
-    questions = data.split('\n');
-    questions.pop(); // since my arrays are delineated by newlines
-  })
+  // // load questions text file data
+  // fetch('/multiple-choice-explanation-template-quiz/questions.txt')
+  // .then((response) => response.text())
+  // .then(data => {
+  //   questions = data.split('\n');
+  //   questions.pop(); // since my arrays are delineated by newlines
+  // })
 
-  // load choices text file data
-  fetch('/multiple-choice-explanation-template-quiz/choices.txt')
-  .then((response) => response.text())
-  .then(data => {
-    choices = data.split('\n');
-    choices.pop(); // since my arrays are delineated by newlines
-  });
+  // // load choices text file data
+  // fetch('/multiple-choice-explanation-template-quiz/choices.txt')
+  // .then((response) => response.text())
+  // .then(data => {
+  //   choices = data.split('\n');
+  //   choices.pop(); // since my arrays are delineated by newlines
+  // });
+
+  async function getCombined() {
+    //load questions data
+    const res = await fetch('/multiple-choice-explanation-template-quiz/multiple-combined.json')
+    const resJSON = await res.json();
+  
+  
+  }
+
+
 
   function handleClick() {
     let temp = choices[counter].split(',');
