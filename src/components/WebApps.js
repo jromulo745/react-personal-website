@@ -88,9 +88,6 @@ function WebApps() {
   function handleClick() {
     let temp = fchoices[counter].toString().split(',');
 
-    console.log('dude: ' + temp[0][1]);
-    console.log(temp[0]);
-
     return showQuestion(true) 
     + shownNextButton(true)
     + setQuestion(fquestions[counter])
@@ -104,7 +101,7 @@ function WebApps() {
   
   function nextQuestion() {
     let temp = fchoices[counter].toString().split(',');
-    
+
     return setQuestion(fquestions[counter]) 
     + setCounter(counter + 1) 
     + (temp[0][0] === '*' ? (setChoice1(temp[0].substring(1)), setAnswer(temp[0].substring(2)), setCorrectButton('1')) : setChoice1(temp[0]))
