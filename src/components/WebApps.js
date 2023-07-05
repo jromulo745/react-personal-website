@@ -98,13 +98,7 @@ function WebApps() {
       }
       inner_used_numbers.push(inner_random_number);
       temp.push(initial[inner_random_number]);
-      // console.log('bro: ' + initial[i]);
-      // console.log('temp: ' + temp[i]);
-      // console.log(initial[inner_random_number]);
     }
-
-    // console.log('heeeeere');
-    // console.log(temp);
 
     return showQuestion(true) 
     + shownNextButton(true)
@@ -130,9 +124,6 @@ function WebApps() {
       }
       inner_used_numbers.push(inner_random_number);
       temp.push(initial[inner_random_number]);
-      // console.log('bro: ' + initial[i]);
-      // console.log('temp: ' + temp[i]);
-      // console.log(initial[inner_random_number]);
     }
 
     return setQuestion(fquestions[counter]) 
