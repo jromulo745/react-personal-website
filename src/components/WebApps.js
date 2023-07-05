@@ -23,7 +23,7 @@ function WebApps() {
     const reader = new FileReader();
     reader.onload = handleFileRead;
     reader.readAsText(file);
-  }
+  }//
 
   // -----------------------------------------------------------------
 
