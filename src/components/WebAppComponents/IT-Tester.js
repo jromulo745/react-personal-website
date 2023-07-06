@@ -80,7 +80,7 @@ function Tester() {
 
     const answer = document.getElementById("answer").value;
 
-    if (answer === correct_answer) {
+    if (answer.toUpperCase() === correct_answer.toUpperCase()) {
       alert('Correct!');
       document.getElementById("answer").style.backgroundColor = "#078e2d";
     }
