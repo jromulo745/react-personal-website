@@ -86,5 +86,24 @@
 "What 802.11 standard is this: Maximum data rate: 9.6 gbps; Frequency: 5 and 2.4 GHz": "802.11ax",
 "What is another name for 802.11n?": "Wi-Fi 4",
 "What is another name for 802.11ac": "Wi-Fi 5",
-"What frequency does Bluetooth use?": "2.4 GHz"
+"What frequency does Bluetooth use?": "2.4 GHz",
+"____ servers store, transfer, migrate, synchronize, and archive files.": "File",
+"A ___ server houses the website of an organization.": "web",
+"_____ servers are basic servers that take control of multiple printers on the network.": "Print",
+"Networked host or server that provides e-mail service.": "Mail server",
+"A _____ server is used primarily as a go-between for a client and the website accessed.": "proxy",
+"The ____ server is in charge of handing out IP addresses to clients.": "DHCP",
+"A ___ server takes care of resolving domain names to IP addresses. ": "DNS",
+"A ___ server resolves hostnames to IP addresses and vice versa.": "DNS",
+"______ is a protocol that can take logged event information from a router or other network device and send it to a logging server—also known as a syslog server.": "Syslog",
+"In the computer security world, AAA stands for ______________, _____________, and __________.": "authentication authorization accounting",
+"Providing robust network security by integrating traditional firewalls with many other security services such as IPS, VPN, load balancing, anti-malware, and more.": "UTM",
+"What does UTM stand for?": "Unified Threat Management",
+"Application that inspects packets, looking for active intrusions. Functions inside the network, looking for threats a firewall might miss, such as viruses, illegal logon attempts, and other well-known attacks. May also discover threats from inside the network, such as a vulnerability scanner run by a rogue employee.": "IDS",
+"What does IDS stand for?": "Intrusion Detection System",
+"Application similar to an intrusion detection system (IDS), except that it sits directly in the flow of network traffic. This enables it to stop ongoing attacks itself, but may also slow down the network and be a single point of failure.": "IPS",
+"What does IPS stand for in security?": "Intrusion Prevention System",
+"Software used to filter incoming e-mail to prevent spam.": "Spam gateway",
+"A device that spreads network traffic across multiple servers in order to improve availability of resources.": "load balancer"
+
 }
