@@ -28,5 +28,15 @@
 "Which standard can attain a data transfer rate of 1 Gbps over a wireless connection?": ["802.11a", "802.11b", "802.11g", "*802.11ac", "802.3ab"],
 "Which of the following is often broken down into groups of channels including 1–5, 6–10, and 11?": ["802.11ac", "*2.4 GHz", "5 GHz", "802.11a", "None of the listed"],
 "You are servicing a customer with a cable broadband Internet connection and an 802.11ac wireless network that is experiencing interference from a nearby office. The customer’s WAP is mounted to the ceiling. Which of the following is the easiest and best solution?": ["Move the wireless access point to another location.", "Reconfigure the WAP to use 2.4 GHz instead of 5 GHz.", "*Change the broadcasting channel on the WAP to one that is not used by any neighbors.", "Recommend a long-range fixed wireless service.", "None of the listed"],
-"Which wireless system is composed of readers and tags and can be used for access control, commerce, advertising, manufacturing, and agriculture?": ["802.11ax", "Wi-Fi 6", "*RFID", "FCC", "None of the listed"]
+"Which wireless system is composed of readers and tags and can be used for access control, commerce, advertising, manufacturing, and agriculture?": ["802.11ax", "Wi-Fi 6", "*RFID", "FCC", "None of the listed"],
+"While looking at the details of a server in your provider’s control panel, you notice that it says “Apache” in the HTTP summary. What kind of server is this?": ["File server", "*Web server", "Email server", "Authentication server", "None of the listed"],
+"Which type of server acts as a go-between for clients and websites?": ["*Proxy server", "Print server", "Syslog server", "DHCP server", "None of the listed"],
+"Which type of server runs Microsoft Exchange?": ["File server", "Authentication server", "*Email server", "Web server", "SCADA"],
+"Which type of device category would a smart thermostat fall under?": ["SCADA", "*IoT", "Load balancer", "Spam gateway", "None of the listed"],
+"You have been tasked with installing a solution that will proactively prevent Internet attacks from reaching the LAN. Which of the following devices is the best solution?": ["Proxy server", "IDS", "Authentication server", "*IPS", "None of the listed"],
+"Which of these addresses needs to be configured to enable a computer access to the Internet or to other networks?": ["Subnet mask", "*Gateway address", "DNS address", "MAC address", "None of the listed"],
+"Which technology assigns addresses on the 169.254.0.0 network?": ["DHCP", "Static IP", "*APIPA", "Class B", "None of the listed"],
+"You want to test the local loopback IPv6 address. Which address would you use?": ["127.0.0.1", "*::1", "FE80::/10", "::0", "None of the listed"],
+"Which of the following IP addresses would you configure so that the computer can take advantage of hostname-to-IP address resolution?": ["127.0.0.1 (local loopback)", "192.168.0.1 (gateway)", "*8.8.8.8 (DNS)", "255.255.255.0 (subnet mask)", "All of the listed"],
+"Of the following, which is a common use for NAT?": ["Defining the network portion of an IPv4 address", "*Connecting multiple computers using a single public IP address", "Resolving hostnames to IP addresses", "Automatically assigning TCP/IP addresses", "None of the above"]
 }
