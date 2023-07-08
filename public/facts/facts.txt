@@ -62,3 +62,17 @@ Know the frequencies used for each of the 802.11 versions!
 Though it’s not listed in Objective 2.3, I suggest you also look into 6 GHz. It has a larger frequency width and the potential to offer more channels than 5 GHz. As of the writing of this book, the 802.11ax standard can also use the 6 GHz range, but it must be with compatible Wi-Fi 6E devices. (2022)
 All the wireless frequencies and channels that we have discussed so far are unlicensed. This means that anyone can use them, and they are not reserved for any government or organizational entity.
 Don’t stand so close to me! Seriously, make sure your selected Wi-Fi channel is in its own “space” by investigating the airwaves with a Wi-Fi analyzer.
+Objective 2.4 concentrates on the following concepts: server roles (DNS, DHCP, file servers, print servers, mail servers, syslog, web servers, AAA), Internet appliances, legacy/embedded systems, and IoT devices.
+You could also purchase or build a network-attached storage (NAS) server, which is a basic box that often contains two or more storage drives and connects directly to the network. A NAS server usually runs some variant of Linux. We’ll discuss NAS further in Chapter 15, “Storage Drives.”
+A proxy server is used primarily as a go-between for a client and the website accessed. It is commonly used to cache information so that the information exists on the proxy server, and another user accessing the same web page won’t have to get it from the Internet; this increases general performance and efficiency. For a client computer to use a proxy server, the web browser needs to be configured properly (as described in Chapter 37, “Windows Networking”).
+A DNS server resolves hostnames to IP addresses and vice versa.
+Know the differences between file servers, web servers, print servers, email servers, proxy servers, DHCP servers, DNS servers, syslog servers, and AAA servers. You might also want to tie in these concepts to the ports that the servers use (see Chapter 5, “TCP and UDP Ports and Protocols”).
+A load balancer provides for equal distribution of IP traffic among a set of servers, increasing redundancy and performance.
+Objective 2.5 focuses on the following concepts: Internet Protocol (IP) addressing; IPv4 and IPv6; Automatic Private IP Addressing (APIPA); and static, dynamic, and gateway addressing.
+Navigation may differ slightly depending on the version of Windows and the way it is configured. Be ready for alterations over time and be ready to use the search tool to simplify the process (or the Run prompt, whenever possible).
+Know the difference between static and dynamic IP addresses.
+APIPA (Automatic Private IP Addressing) is a system used on Windows to automatically self-assign an IP address in the 169.254.x.x range in the absence of a DHCP server.
+To use the gateway, computers must be on the same network number as the gateway device.
+Know where and how to configure client-side DNS and DHCP settings.
+Know the loopback addresses for IPv6 and IPv4.
+Understand how IPv6 addresses can be truncated.
