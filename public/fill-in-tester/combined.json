@@ -104,6 +104,18 @@
 "Application similar to an intrusion detection system (IDS), except that it sits directly in the flow of network traffic. This enables it to stop ongoing attacks itself, but may also slow down the network and be a single point of failure.": "IPS",
 "What does IPS stand for in security?": "Intrusion Prevention System",
 "Software used to filter incoming e-mail to prevent spam.": "Spam gateway",
-"A device that spreads network traffic across multiple servers in order to improve availability of resources.": "load balancer"
-
+"A device that spreads network traffic across multiple servers in order to improve availability of resources.": "load balancer",
+"________ _______ are devices that have integrated CPU and RAM and can process information internally without the need for a controlling system.": "Embedded systems",
+"The ___ is a global network of physical objects that have embedded processors (of some sort) that can communicate with computers across the Internet.": "IoT",
+"What does IoT stand for?": "Internet of Things",
+"Feature of Windows that automatically assigns an IP address to the system when the client cannot obtain an IP address automatically.": "APIPA",
+"What does APIPA stand for?": "Automatic Private IP Addressing",
+"_______ IP addresses are internal to your network and do not communicate directly with the Internet.": "Private",
+"A ______ IP address is an address that communicates directly with the Internet.": "public",
+"Enter the format for a Class A private IP address": "10.x.x.x",
+"Enter the format for a Class B private IP address": "172.16-31.x.x",
+"Enter the format for a Class C private IP address": "192.168.x.x",
+"Name the format for this range of private IP addresses: 10.0.0.0–10.255.255.255": "Class A",
+"Name the format for this range of private IP addresses: 172.16.0.0–172.31.255.255": "Class B",
+"Name the format for this range of private IP addresses: 192.168.0.0–192.168.255.255": "Class C",
 }
