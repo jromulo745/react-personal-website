@@ -95,3 +95,26 @@ FTTP service typically runs over a fiber optic line to a network interface devic
 Fiber optic cables can run at much higher data transfer rates than copper-based cables. Home-based fiber optic Internet connections can typically download data between 100 Mbps and 1000 Mbps. Upload speeds are typically less, as they are in most other Internet services, but they are substantially higher than other broadband options.
 With satellite connectivity, a parabolic antenna (satellite dish) connects via line-of-sight to a satellite; it is used in places where standard landline-based Internet access is not available.
 A wireless Internet service provider (WISP) is an ISP that specializes in wireless networking and builds a wireless mesh network using one of several licensed or unlicensed frequency bands. A WISP’s main function is to provide Internet service to customers who cannot obtain service from cable, DSL, or fiber providers or who do not want those services.
+Objective 2.8 focuses on the following networking tools: crimper, cable stripper, tone generator and probe, cable tester, loopback plug, punchdown tool, loopback plug, Wi-Fi analyzer, and network tap.
+A network tap is a physical device used to capture and copy data packets for analysis.
+A Wi-Fi analyzer is a tool that can identify wireless networks and the channels/frequencies they use.
+Objective 3.1 concentrates on the following concepts: network cables, peripheral cables, video cables, hard drive cables, adapters, and connector types.
+Know what network speeds Cat 5, 5e, and 6/6a are rated for.
+If a computer cannot connect to the network, check the network cable first. Make sure the RJ45 plug has a solid connection.
+To meet fire code, use plenum-rated cable above drop ceilings and anywhere else necessary.
+STP cable is resistant to EMI.
+Make sure you know cable terminology such as RJ11, RJ45, F-connector, and RG-6 for the exam.
+Be able to identify straight tip (ST), subscriber connector (SC), and Lucent Connector (LC) fiber optic connectors.
+Memorize the specifications for USB 2.0 (480 Mbps) through 3.2 (10/20 Gbps).
+Know the Thunderbolt versions, speeds, and connection types.
+Remember that DE-9 (DB-9) is a 9-pin connector used for serial cable and RS-232 data transmissions.
+Be able to identify VGA, HDMI, Mini-HDMI, DisplayPort, and DVI video connectors and ports.
+Know your storage drive cables, including SATA, SCSI, eSATA, and IDE.
+Objective 3.2 concentrates on the following concepts: RAM types (DDR3, DDR4, DDR5, and SODIMM), single channel, dual channel, triple channel, quad channel, error correction code, and virtual RAM.
+Be able to identify a 288-pin DDR4 module.
+Remember: DDR3 is 240-pin; DDR4 and DDR5 are 288-pin—and none of them are compatible with each other!
+Some mobile devices use low-power versions of DDR (known as LPDDR3, LPDDR4, and LPDDR5).
+There are plenty of good third-party tools for analyzing RAM as well, such as CPU-Z. -David Prowse
+Know how to select, install, and verify RAM.
+Know the difference between single-, dual-, triple-, and quad-channel for the exam.
+Know that ECC RAM can prevent data loss and potential system crashes by automatically correcting memory errors.
