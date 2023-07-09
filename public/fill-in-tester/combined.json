@@ -151,6 +151,22 @@
 "A ____ is implemented primarily to segment a network. But it can also be used to reduce data collisions, organize the network, potentially boost performance, and, possibly, increase security": "VLAN",
 "What does VLAN stand for?": "Virtual Local Area Network",
 "Encrypted connection over the Internet between a computer or remote network and a private network.": "VPN",
-"What does VPN stand for?": "Virtual Private Network"
-
+"What does VPN stand for?": "Virtual Private Network",
+"A ___ is a group of computers and other devices usually located in a small area: a house, a small office, or a single building.": "LAN",
+"What does LAN stand for?": "local area network",
+"A LAN is usually based on a network design called the ____, or hub-and-spoke, topology, where all hosts connect to a central connecting device such as a switch, an access point, or a SOHO router.": "star",
+"A ___, is a group of one or more LANs over a large geographic area. Let’s say a company has two LANs: one in New York and one in Los Angeles. Connecting the two would result in a ___.": "WAN",
+"802.11 network that covers a single city.": "MAN",
+"What does MAN stand for?": "metropolitan area network",
+"A ___ is a dedicated network designed specifically for the storage of data.": "SAN",
+"What does SAN stand for?": "storage area network",
+"A wireless local area network (WLAN) is really a subdivision of a LAN. A WLAN is formed when multiple computers are connected by way of one or more wireless access points.": "WLAN",
+"What does WLAN stand for?": "Wireless Local Area Network",
+"A hybrid wireless topology in which most nodes connect in a mesh network while also including some wired machines. Nodes act like routers; they forward traffic for other nodes, but without wires.": "WMN",
+"What does WMN stand for?": "Wireless Mesh Network",
+"A ___ is a smaller computer network used for communication by small computing devices. Take this to the next level by adding wireless standards such as Bluetooth, wireless USB, NFC, Zigbee, or Z-Wave, and you get a wireless ___ (w___).": "PAN",
+"What does PAN stand for?": "Personal Area Network",
+"What does WPAN stand for?": "Wireless Personal Area Network",
+"Know that cable Internet connections use ____ coaxial cable and F-connectors to the cable modem.": "RG-6",
+"Know that cable Internet connections use RG-6 coaxial cable and ____________ to the cable modem.": "F-connectors"
 }
