@@ -75,4 +75,15 @@ APIPA (Automatic Private IP Addressing) is a system used on Windows to automatic
 To use the gateway, computers must be on the same network number as the gateway device.
 Know where and how to configure client-side DNS and DHCP settings.
 Know the loopback addresses for IPv6 and IPv4.
-Understand how IPv6 addresses can be truncated.
+Understand how IPv6 addresses caObjective 2.6 focuses on the following concepts: DNS, DHCP, VLANs, and VPNs.
+Hostname + Domain name = FQDN (fully qualified domain name).
+Be able to identify DNS Address (A and AAAA) records, Mail Exchange (MX) records, and Text (TXT) records for the exam.
+A DHCP scope is a range of IP addresses that a DHCP server can hand out to clients.
+An IP lease is the amount of time that a client can use an assigned IP address in a DHCP system.
+DHCP reservations are IP addresses within the DHCP scope that are permanently reserved.
+Remember that VLANs are commonly used for network segmentation.
+Know that a VPN extends a LAN by establishing a secure connection tunnel through a public network such as the Internet.
+Objective 2.7 concentrates on the following concepts: Internet connection types (cable, DSL, fiber, satellite, cellular, and WISP), and network types (LAN, WAN, PAN, MAN, SAN, and WLAN).
+Fibre Channel is widely used for high-speed fiber networking and has become common in enterprise SANs.
+Be able to define, compare, and contrast LAN, WAN, MAN, SAN, WLAN, and PAN.
+Know that cable Internet connections use RG-6 coaxial cable and F-connectors to the cable modem.
