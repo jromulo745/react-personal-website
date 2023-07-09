@@ -46,5 +46,10 @@
 "Which of the following DNS record types directs email to an email server?": ["A", "AAAA", "TXT", "*MX", "None of the listed"],
 "Which of the following is a group of Windows desktop computers located in a small area?": ["*LAN", "WAN", "PAN", "MAN", "None of the listed"],
 "What kind of cable and connector are used with cable Internet service to connect to the customer’s “modem”?": ["Twisted pair and RJ11", "802.11ax and antenna", "Fiber and ST", "*RG-6 and F-connector", "None of the listed"],
-"Which of the following might make use of Fibre Channel connections?": ["WAN", "*SAN", "DSL", "Cable Internet", "WISP"]
+"Which of the following might make use of Fibre Channel connections?": ["WAN", "*SAN", "DSL", "Cable Internet", "WISP"],
+"Which tool is used to test a network adapter without a network connection?": ["Punchdown tool", "Cable tester", "*Loopback plug", "Tone generator and probe", "None of the listed"],
+"Your boss is concerned about overlapping wireless networks from neighboring companies using 802.11ac. Which tool should you use to analyze the problem, and which frequency should you display for analysis": ["*Wi-Fi analyzer; 5 GHz", "Cable certifier; 5 GHz", "Loopback plug; 2.4 GHz", "Wi-Fi analyzer; 2.4 GHz", "None of the listed"],
+"What would be required to attach RJ45 plugs to the ends of a single patch cable?": ["Tone and probe kit", "Multimeter", "Cable stripper", "*Crimper", "None of the listed"],
+"Your organization is terminating Category 6 cable to a 110 block. Which of the following tools should you use to perform the task?": ["*Punchdown tool", "Crimper", "Cable stripper", "Tone generator", "None of the listed"],
+"Say that you are responsible for the network security of your organization. You decide to perform packet sniffing on your switch by using Wireshark. Which of the following tools will help you to do this?": ["Tone and probe kit", "*Network tap", "Wireless analyzer", "Loopback plug", "None of the listed"]
 }
