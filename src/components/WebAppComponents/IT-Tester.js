@@ -17,6 +17,7 @@ function Tester() {
   const [fchoices, setFChoices] = useState([]);
 
   const [total_questions_amount, setAmount] = useState();
+  const [counter_for_display, setDisplayCounter] = useState(0);
 
   const [counter, setCounter] = useState(0);
   const [current_question, setQuestion] = useState('');
@@ -73,7 +74,8 @@ function Tester() {
     + setAnswer(fchoices[counter])
     + setDisabled(true)
     + setDisabledInput(false)
-    + setSubmitDisabled(false);
+    + setSubmitDisabled(false)
+    + setDisplayCounter(counter_for_display + 1);
   }
 
   // -----------------------------------------------------------------
@@ -118,7 +120,7 @@ function Tester() {
             {/* next button */}
             {next_button ? (<button style={{marginBottom: '-10px', marginTop: '5px'}} onClick ={nextQuestion} disabled={disabled}>Next Question</button>) : null}
           </div>
-          {question_cluster ? (<h2 style={{color: 'gray', textAlign: 'center', marginLeft: '10px', marginBottom: '-40px'}}><br />({counter + 1} of {total_questions_amount})</h2>) : null}
+          {question_cluster ? (<h2 style={{color: 'gray', textAlign: 'center', marginLeft: '10px', marginBottom: '-40px'}}><br />({counter_for_display + 1} of {total_questions_amount})</h2>) : null}
           {question_cluster ? (<h2 style={{textAlign: 'left', marginLeft: '10px'}}><br />{current_question}</h2>) : null}
           {question_cluster ? ( <div style={{textAlign: 'left', marginLeft: '10px'}} className={`${styles.button} ${styles.button}`}>
             <form>
