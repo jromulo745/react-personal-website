@@ -16,6 +16,8 @@ function Tester() {
   const [fquestions, setFQuestions] = useState([]);
   const [fchoices, setFChoices] = useState([]);
 
+  const [total_questions_amount, setAmount] = useState();
+
   const [counter, setCounter] = useState(0);
   const [current_question, setQuestion] = useState('');
   const [question_cluster, showQuestion] = useState(false);
@@ -45,6 +47,7 @@ function Tester() {
     }
     setFChoices(final_choices);
     setFQuestions(final_questions);
+    setAmount(final_questions.length);
   }
 
   function getRandomIntInclusive(min, max) {
@@ -115,6 +118,7 @@ function Tester() {
             {/* next button */}
             {next_button ? (<button style={{marginBottom: '-10px', marginTop: '5px'}} onClick ={nextQuestion} disabled={disabled}>Next Question</button>) : null}
           </div>
+          {question_cluster ? (<h2 style={{color: 'gray', textAlign: 'center', marginLeft: '10px', marginBottom: '-40px'}}><br />({counter + 1} of {total_questions_amount})</h2>) : null}
           {question_cluster ? (<h2 style={{textAlign: 'left', marginLeft: '10px'}}><br />{current_question}</h2>) : null}
           {question_cluster ? ( <div style={{textAlign: 'left', marginLeft: '10px'}} className={`${styles.button} ${styles.button}`}>
             <form>

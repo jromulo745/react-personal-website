@@ -198,7 +198,7 @@
 "What does SATA stand for?": "serial advanced technology attachment",
 "A much older type of connection that runs in parallel (8 bits at a time) instead of serially (1 bit at a time). It uses a 40-pin ribbon cable for data and a 4-pin Molex connector for power. (The chances of seeing this type of connector are slim.)": "IDE",
 "What does IDE stand for?": "integrated drive electronics",
-"Around since the 1980s, SCSI at first was designed as a parallel technology that could run faster than IDE and other connections. Today, a common type of SCSI is Serial Attached SCSI (SAS), which can transfer data as fast as 22.5 Gbps (SAS version 4); faster speeds are being developed.": "SCSI",
+"Around since the 1980s, ____ at first was designed as a parallel technology that could run faster than IDE and other connections. Today, a common type of ____ is Serial Attached ____ (SAS), which can transfer data as fast as 22.5 Gbps (SAS version 4); faster speeds are being developed.": "SCSI",
 "What does SCSI stand for?": "small computer system interface",
 "How many pins does a DDR3 DIMM have?": "240",
 "How many pins does a DDR4 DIMM have?": "288",
