@@ -30,6 +30,9 @@ function WebApps() {
   let questions = [];
   let choices = [];
 
+  const [total_questions_amount, setAmount] = useState();
+  const [counter_for_display, setDisplayCounter] = useState(0);
+
   let final_questions = [];
   let final_choices = [];
   let used_numbers = [];
@@ -83,6 +86,7 @@ function WebApps() {
     }
     setFChoices(final_choices);
     setFQuestions(final_questions);
+    setAmount(final_choices.length);
   }
 
   function handleClick() {
@@ -128,6 +132,7 @@ function WebApps() {
 
     return setQuestion(fquestions[counter]) 
     + setCounter(counter + 1) 
+    + setDisplayCounter(counter_for_display + 1)
     + (temp[0][0] === '*' ? (setChoice1(temp[0].substring(1)), setAnswer(temp[0].substring(2)), setCorrectButton('1')) : setChoice1(temp[0]))
     + (temp[1][0] === '*' ? (setChoice2(temp[1].substring(1)), setAnswer(temp[1].substring(2)), setCorrectButton('2')) : setChoice2(temp[1]))
     + (temp[2][0] === '*' ? (setChoice3(temp[2].substring(1)), setAnswer(temp[2].substring(2)), setCorrectButton('3')) : setChoice3(temp[2]))
@@ -186,6 +191,7 @@ function WebApps() {
             {/* next button */}
             {next_button ? (<button style={{marginBottom: '-10px', marginTop: '5px'}} onClick ={nextQuestion}>Next Question</button>) : null}
           </div>
+          {question_cluster ? (<h2 style={{color: 'gray', textAlign: 'center', marginLeft: '10px', marginBottom: '-40px'}}><br />({counter_for_display + 1} of {total_questions_amount})</h2>) : null}
           {question_cluster ? (<h2 style={{textAlign: 'left', marginLeft: '10px'}}><br />{current_question}</h2>) : null}
           {question_cluster ? ( <div style={{textAlign: 'left', marginLeft: '10px'}} className={`${styles.button} ${styles.button}`}>
             <br />
