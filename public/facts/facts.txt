@@ -85,6 +85,7 @@ Remember that VLANs are commonly used for network segmentation.
 Know that a VPN extends a LAN by establishing a secure connection tunnel through a public network such as the Internet.
 Objective 2.7 concentrates on the following concepts: Internet connection types (cable, DSL, fiber, satellite, cellular, and WISP), and network types (LAN, WAN, PAN, MAN, SAN, and WLAN).
 Fibre Channel is widely used for high-speed fiber networking and has become common in enterprise SANs.
+A SAN (storage area network) often makes use of Fibre Channel connections and switches to connect NAS points and other data storage devices together into a super-fast network. A wide area network (WAN) is a network that connects two or more LANs together. Digital subscriber line (DSL) is a type of Internet service, as are cable Internet and wireless Internet service providers (WISPs).
 Be able to define, compare, and contrast LAN, WAN, MAN, SAN, WLAN, and PAN.
 Broadband cable, used for cable Internet and cable TV, is very common in the United States and many other countries. It offers download transfer rates from 50 Mbps to 1000 Mbps (depending on the ISP).
 Know that cable Internet connections use RG-6 coaxial cable and F-connectors to the cable modem.
