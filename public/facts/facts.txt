@@ -120,3 +120,29 @@ There are plenty of good third-party tools for analyzing RAM as well, such as CP
 Know how to select, install, and verify RAM.
 Know the difference between single-, dual-, triple-, and quad-channel for the exam.
 Know that ECC RAM can prevent data loss and potential system crashes by automatically correcting memory errors.
+Objective 3.3 focuses on the following: hard drives, SSDs, drive configurations, and removable storage.
+Know the maximum data transfer rates for SATA Revisions 3.0 and 3.2.
+You might also see some organizations refer to SATA measurements using the units Gbit/s or Gbps, instead of Gb/s, but they mean the same thing.
+Also listed in the objectives is mSATA (which is short for Mini-SATA). This is a type of connector that was used in laptops for SSDs. An mSATA drive has a single notch, as opposed to two notches on laptop-based M.2 devices that use the 2242 form factor. M.2, by the way, supersedes the mSATA specification.
+A typical operating system such as Windows displays a 500 GB drive as having a capacity of 476 GB (or 465 GB or a similar number). This is due to a difference in numbering systems used to measure the drive. A hard drive manufacturer uses the base 10 system, whereas Windows uses the base 2 system, resulting in a slightly lower number. No actual space is lost during this conversion!
+Know the differences between the various types of RAID: RAID 0 (striping), RAID 1 (mirroring), RAID 5 (striping with parity), and RAID 10 (stripe of mirrors).
+Remember to safely remove USB flash drives in the operating system before physically disconnecting them.
+Tip: Sometimes a USB or other flash-based solid-state device can’t be removed with the Safely Remove Hardware option in Windows. If this happens, consider shutting down the computer before physically disconnecting the device to avoid data corruption or loss.
+If an optical disc gets jammed in an optical drive tray, use a paper clip! It can be inserted into the small hole next to the tray. Add one to your PC toolkit!
+This portion of Objective 3.4 concentrates on the following concepts: motherboard form factors and connector types; motherboard compatibility; BIOS/UEFI settings; encryption; and expansion cards.
+Know the voltages supplied to an ATX motherboard by a power supply: +3.3 V, +5 V, +12 V, and –12 V outputs and +5 V standby output.
+Make sure you can identify the PCIe x16 and x1 expansion slots for the exam.
+Note: You will find that sometimes the operating system installs a driver automatically. At times, this driver is good enough, but many times you will want the latest drive from the manufacturer.
+Know how to install and test a video card.
+Know how to install, configure, and test sound, network, USB, and eSATA expansion cards.
+Know how to set the BIOS boot options! Also, if you boot a PC and see a black screen with a white blinking underscore on the top left, the issue could be the boot order.
+It is crucial to secure UEFI-equipped systems with Secure Boot and a TPM.
+The POST is a built-in troubleshooting tool provided by the motherboard. Use it!
+This portion of Objective 3.4 concentrates on the following concepts: CPU architecture, compatibility, and cooling.
+For today’s CPUs, two of the most commonly used terms are bus speed (the base clock of the motherboard) and clock speed (the frequency of the CPU). These terms might not be completely accurate, technically, but you will see and hear them often, and you could see them on the exam as well.
+Note: While not the only CPU architectures that exist, x86-64 and ARM architectures are by far the most common.
+Know the differences between multithreading and multicore technologies. Multi-threading enables a single-core CPU to calculate two instruction sets simultaneously, whereas multicore CPUs have two or more cores, each of which can use multithreading.
+Compatibility is key! Find the correlation between sockets, chipsets, and CPUs by analyzing the motherboard and CPU documentation.
+Reapply thermal paste whenever removing and reinstalling a heat sink.
+Of all PC cooling methods, liquid cooling systems can dissipate heat the most efficiently, but they are usually only necessary for the most powerful PCs.
+Note: You can view basic CPU information in Windows at the System Information window, which can be accessed by opening the Run prompt and typing msinfo32.
