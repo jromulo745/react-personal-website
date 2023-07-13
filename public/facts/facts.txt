@@ -121,8 +121,13 @@ Know how to select, install, and verify RAM.
 Know the difference between single-, dual-, triple-, and quad-channel for the exam.
 Know that ECC RAM can prevent data loss and potential system crashes by automatically correcting memory errors.
 Objective 3.3 focuses on the following: hard drives, SSDs, drive configurations, and removable storage.
+SATA technology is used by magnetic hard drives and solid-state drives.
 Know the maximum data transfer rates for SATA Revisions 3.0 and 3.2.
 You might also see some organizations refer to SATA measurements using the units Gbit/s or Gbps, instead of Gb/s, but they mean the same thing.
+Data Transfer Discrepancy: If you divided by 8 to determine rates for SATA Revision 3.0, the actual data written to the drive would be less than you would expect. This is due to overhead in the form of encoding. That brings Revision 3.0 down from 6.0 to 4.8 Gb/s (which equates to 600 MB/s). SATA 3.2 is not affected by this.
+HDDs come in two main widths: 3.5 inch and 2.5 inch. 3.5-inch drives are used in desktop computers, network-attached storage (NAS), and other larger devices. 2.5-inch drives are used in laptops and other smaller devices. Generally, HDDs use the SATA communications interface. They are typically sold with data storage capacities of 500 GB, 1 TB, 2 TB, 4 TB, and beyond.
+HDDs are still somewhat common because they have been available for a long time and are generally cheaper than solid-state drives. (2022).
+A solid-state drive (SSD) is used to store operating systems and files, similar to a magnetic hard disk drive. However, SSDs don’t use spinning disks or read/write heads; they instead write data to non-volatile microchips.
 Also listed in the objectives is mSATA (which is short for Mini-SATA). This is a type of connector that was used in laptops for SSDs. An mSATA drive has a single notch, as opposed to two notches on laptop-based M.2 devices that use the 2242 form factor. M.2, by the way, supersedes the mSATA specification.
 A typical operating system such as Windows displays a 500 GB drive as having a capacity of 476 GB (or 465 GB or a similar number). This is due to a difference in numbering systems used to measure the drive. A hard drive manufacturer uses the base 10 system, whereas Windows uses the base 2 system, resulting in a slightly lower number. No actual space is lost during this conversion!
 Know the differences between the various types of RAID: RAID 0 (striping), RAID 1 (mirroring), RAID 5 (striping with parity), and RAID 10 (stripe of mirrors).
@@ -138,6 +143,7 @@ Know how to install, configure, and test sound, network, USB, and eSATA expansio
 Know how to set the BIOS boot options! Also, if you boot a PC and see a black screen with a white blinking underscore on the top left, the issue could be the boot order.
 It is crucial to secure UEFI-equipped systems with Secure Boot and a TPM.
 The POST is a built-in troubleshooting tool provided by the motherboard. Use it!
+The BIOS indicates any system problems that the POST finds via either onscreen display codes, beep codes, or an integrated error code readout on the motherboard itself. 
 This portion of Objective 3.4 concentrates on the following concepts: CPU architecture, compatibility, and cooling.
 For today’s CPUs, two of the most commonly used terms are bus speed (the base clock of the motherboard) and clock speed (the frequency of the CPU). These terms might not be completely accurate, technically, but you will see and hear them often, and you could see them on the exam as well.
 Note: While not the only CPU architectures that exist, x86-64 and ARM architectures are by far the most common.
