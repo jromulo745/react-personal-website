@@ -153,3 +153,13 @@ Compatibility is key! Find the correlation between sockets, chipsets, and CPUs b
 Reapply thermal paste whenever removing and reinstalling a heat sink.
 Of all PC cooling methods, liquid cooling systems can dissipate heat the most efficiently, but they are usually only necessary for the most powerful PCs.
 Note: You can view basic CPU information in Windows at the System Information window, which can be accessed by opening the Run prompt and typing msinfo32.
+Objective 3.5 focuses on the following: input 115 V vs. 220 V, output 3.3 V vs. 5 V vs. 12 V, 20-pin to 24-pin motherboard adapter, redundant power supply, modular power supply, and wattage rating.
+Be able to identify the main 24-pin power port/connector and the CPU’s EATX12V 8-pin port/connector.
+The purpose of “dual-rail” PSUs is to separate and limit the current through each wire to avoid overheating.
+Remember that the PSU wattage rating refers to the maximum amount of power the PSU can output under 100% load capacity.
+Be able to identify SATA, Molex, and PCIe power connectors, know their associated voltages, and know their number of pins.
+Objective 3.6 concentrates on the following concepts: properly unboxing a device, setup location considerations, use of appropriate drivers for a given OS, device connectivity, public/shared devices, configuration settings, security, network scan services, and automatic document feeder (ADF)/flatbed scanners.
+Know the differences between the printer driver types: PCL (more common, used for typical office printing) and PostScript (less common, used for professional graphics).
+Know the following printer configuration settings: duplex, collate, orientation, tray settings, and quality.
+Note: You can also make a computer’s devices visible when Windows is first installed. We’ll discuss this and network discovery in the Windows networking section of this book.
+Printer security can be implemented through user authentication and policies, badging, and Secure Print. Audit logs can be used to see what was printed, where it was printed, and who printed it.
