@@ -214,7 +214,7 @@
 "What SATA version has a maximum data of 6 Gb/s and a transfer rate of 600 MB/s": "3.0",
 "What SATA version has a maximum data of 16 Gb/s and a transfer rate of 1969 MB/s": "3.2",
 "____ technologies are designed to either increase the speed of reading and writing data or to create one of several types of fault-tolerant volumes—or both.": "RAID",
-"What does RAID stand for?": "Redundant array of independent",
+"What does RAID stand for?": "Redundant array of independent disks",
 "To create a RAID array, you need ___ or more drives.": "two",
 "(RAID question): Striping. Data is striped across multiple disks in an effort to increase performance.": "RAID 0",
 "(RAID question): Mirroring. Data is copied to two identical disks. If one disk fails, the other continues to operate. When each disk is connected to a separate controller, this is known as disk duplexing. See Figure 15.2 for an illustration.": "RAID 1",
