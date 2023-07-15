@@ -9,6 +9,10 @@ function ExamAlerts() {
   // comment line strictly to rebuild aws connection
   let questions;
   let choices;
+
+  const [total_questions_amount, setAmount] = useState();
+  const [counter_for_display, setDisplayCounter] = useState(0);
+
   const [counter, setCounter] = useState(0);
   const [current_question, setQuestion] = useState('');
   const [question_cluster, showQuestion] = useState(false);
@@ -19,6 +23,7 @@ function ExamAlerts() {
   .then((response) => response.text())
   .then(data => {
     questions = data.split('\n');
+    setAmount(questions.length);
     questions.pop(); // since my arrays are delineated by newlines
   })
 
@@ -38,7 +43,8 @@ function ExamAlerts() {
   }
   
   function nextQuestion() {
-    return setQuestion(questions[counter]) 
+    return setDisplayCounter(counter_for_display + 1)
+    + setQuestion(questions[counter]) 
     + setCounter(counter + 1) 
     + console.log(counter);
   }
@@ -59,6 +65,7 @@ function ExamAlerts() {
             {/* next button */}
             {next_button ? (<button style={{marginBottom: '-10px', marginTop: '5px'}} onClick ={nextQuestion}>Next Question</button>) : null}
           </div>
+          {question_cluster ? (<h2 style={{color: 'gray', textAlign: 'center', marginLeft: '10px', marginBottom: '-40px'}}><br />({counter_for_display + 1} of {total_questions_amount})</h2>) : null}
           {question_cluster ? (<h2 style={{textAlign: 'left', marginLeft: '10px'}}><br />{current_question}</h2>) : null}
           
           <div style={{marginBottom: '15px'}}> </div>
