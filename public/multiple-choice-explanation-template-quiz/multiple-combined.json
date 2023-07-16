@@ -95,6 +95,5 @@
 "Which of the following types of cloud services offers email through a web browser?": ["*SaaS", "IaaS", "PaaS", "Community cloud", "None of the listed"],
 "Your organization requires more control over its data and infrastructure. Money is apparently not an issue. There are only 2 admins and about 30 users who will have access to the data in the cloud. Which of the following cloud types is the best option?": ["Public", "*Private", "Hybrid", "Community", "None of the listed"],
 "You require the ability to quickly and efficiently add to your cloud-based network whenever necessary. What is the term for this?": ["Measured services", "Metered utilization", "*Rapid elasticity", "On-demand service", "None of the listed"],
-"What is the term for multiple virtual desktops for multiple users being hosted by a service either in the cloud or on-premises?": ["High availability", "Shared resources", "File synchronization", "*Virtual desktop infrastructure (VDI)", "None of the listed"],
-
+"What is the term for multiple virtual desktops for multiple users being hosted by a service either in the cloud or on-premises?": ["High availability", "Shared resources", "File synchronization", "*Virtual desktop infrastructure (VDI)", "None of the listed"]
 }
