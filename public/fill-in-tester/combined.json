@@ -218,7 +218,7 @@
 "To create a RAID array, you need ___ or more drives.": "2",
 "(RAID question): Striping. Data is striped across multiple disks in an effort to increase performance.": "RAID 0",
 "(RAID question): Mirroring. Data is copied to two identical disks. If one disk fails, the other continues to operate. When each disk is connected to a separate controller, this is known as disk duplexing.": "RAID 1",
-"(RAID question) Striping with parity. Data is striped across multiple disks; the fault-tolerant parity data is also written to each disk. If one disk fails, the array can reconstruct the data from the parity information. See Figure 15.3 for an illustration.": "RAID 5",
+"(RAID question) Striping with parity. Data is striped across multiple disks; the fault-tolerant parity data is also written to each disk. If one disk fails, the array can reconstruct the data from the parity information.": "RAID 5",
 "(RAID question) Combines the advantages of RAID 1 and RAID 0. Requires a minimum of four or more disks. The system contains at least two mirrored disks that are then striped. Also known as 'stripe of mirrors.'": "RAID 10",
 "(Yes/No) Is RAID 0 fault tolerant?": "No",
 "(Yes/No) Is RAID 1 fault tolerant?": "Yes",
