@@ -251,5 +251,13 @@
 "What power connector does the following pins and voltages match with: 4-pin, 5 V (red), 12 V (yellow), two ground wires": "Molex",
 "What power connector does the following pins and voltages match with: 6-pin, 12 V (ATX12V version 2.1); 8-pin, 12 V (ATX12V version 2.2 and higher)": "PCIe",
 "(_________ simply means more than one of a particular component.": "Redundant",
-"ATX motherboards are always receiving _ volts, even when they are off (if the computer is plugged in).": "5"
+"ATX motherboards are always receiving _ volts, even when they are off (if the computer is plugged in).": "5",
+"___ drivers are the more commonly used of the two. PCL is used for general office applications: printing typical documents, spreadsheets, and so on.": "PCL",
+"__________ drivers are used for professional graphics and presentations. It is designed for higher-end printers but can be supported by lesser models as well.": "PostScript",
+"_________ means printing on both sides of the paper, and it might simply be called 'print on both sides.'": "duplexing",
+"_________ lets you specify the order in which multiple copies of a multi-page document are printed.": "collating",
+"___________ is the method of positioning a printed page and is based on whether the page is going to be viewed vertically (portrait) or horizontally (landscape).": "Orientation",
+"________ is the print resolution, which is measured in dots per inch (DPI).": "quality",
+
+
 }
