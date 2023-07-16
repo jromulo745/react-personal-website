@@ -143,10 +143,10 @@
 "___ also detects email spoofers. A receiving email server can attempt to check mail by verifying the IP address of the domain that the mail claims to have come from.": "SPF",
 "What does SPF stand for?": "Sender Policy Framework",
 "This email authentication protocol helps protect email domains from spoofing and other unauthorized use. It is used in conjunction with the older DKIM and/or SPF methods, which by themselves are less potent solutions": "DEMARC",
-"What is the 1st step to the DHCP Process?": "Discovery",
-"What is the 2nd step to the DHCP Process?": "Offering",
+"What is the 1st step to the DHCP Process?": "Discover",
+"What is the 2nd step to the DHCP Process?": "Offer",
 "What is the 3rd step to the DHCP Process?": "Request",
-"What is the 4th step to the DHCP Process?": "Acknowledgment",
+"What is the 4th step to the DHCP Process?": "Acknowledge",
 "____ ____________ are IP addresses within the DHCP scope that are permanently reserved for special computers/devices that need to use DHCP but don’t want the IP address to change over time (which can happen periodically in DHCP environments).": "DHCP reservations",
 "A ____ is implemented primarily to segment a network. But it can also be used to reduce data collisions, organize the network, potentially boost performance, and, possibly, increase security.": "VLAN",
 "What does VLAN stand for?": "Virtual Local Area Network",
@@ -257,7 +257,5 @@
 "_________ means printing on both sides of the paper, and it might simply be called 'print on both sides.'": "duplexing",
 "_________ lets you specify the order in which multiple copies of a multi-page document are printed.": "collating",
 "___________ is the method of positioning a printed page and is based on whether the page is going to be viewed vertically (portrait) or horizontally (landscape).": "Orientation",
-"________ is the print resolution, which is measured in dots per inch (DPI).": "quality",
-
-
+"________ is the print resolution, which is measured in dots per inch (DPI).": "quality"
 }
