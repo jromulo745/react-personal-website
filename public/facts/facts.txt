@@ -168,3 +168,21 @@ Know the differences between the printer driver types: PCL (more common, used fo
 Know the following printer configuration settings: duplex, collate, orientation, tray settings, and quality.
 Note: You can also make a computer’s devices visible when Windows is first installed. We’ll discuss this and network discovery in the Windows networking section of this book.
 Printer security can be implemented through user authentication and policies, badging, and Secure Print. Audit logs can be used to see what was printed, where it was printed, and who printed it.
+Objective 3.7 focuses on the following: laser printers, inkjet printers, thermal printers, impact printers, and 3D printers.
+Know the steps of the laser printing process (also known as the imaging process).
+Know that laser printer components include the imaging drum, fuser assembly, transfer belt, transfer roller, pickup rollers, separation pads, and duplexing assembly.
+Note: Toner cartridges are replaceable; they are known as consumables. Whatever material it is that actually prints onto paper is usually considered a consumable, regardless of the type of printer.
+Of all printer types, the laser printer is considered to have the lowest cost per page, making it an excellent long-term printer choice for businesses.
+Remember that maintenance for laser printers includes replacing toner, applying a maintenance kit, calibration, and cleaning.
+Know that inkjet printer components include ink cartridge, print head, roller, feeder, duplexing assembly, carriage, and belt.
+Remember that inkjet printer maintenance includes cleaning heads, replacing cartridges, and calibration.
+Thermal printers use a feed assembly, heating element, and special thermal paper. Maintenance includes replacing paper, cleaning the heat element, and removing debris.
+Know that impact printer components include the print head, ribbon, and tractor feed. Also know that impact paper is used.
+Know that 3D printers use a special plastic filament or resin to create the 3D shapes.
+Note: 3D “printing” is not considered an accurate name by some, but the term is used widely. You will also see the name additive manufacturing, among others.
+3D printer maintenance includes updating firmware, ensuring that the print bed is level, and cleaning excess plastic from the print environment.
+Objective 4.1 concentrates on the following concepts: common cloud models, cloud characteristics, and desktop virtualization.
+Know what SaaS, IaaS, and PaaS are.
+Know what public, private, hybrid, and community clouds are.
+Know the difference between measured services and metered utilization.
+Be familiar with these cloud-based concepts: rapid elasticity, high availability, and file synchronization.
