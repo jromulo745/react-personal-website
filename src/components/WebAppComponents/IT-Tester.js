@@ -90,8 +90,8 @@ function Tester() {
       document.getElementById("answer").style.backgroundColor = "#078e2d";
     }
     else {
-      alert('Wrong: The correct answer is this: ' + fchoices[counter]);
       document.getElementById("answer").style.backgroundColor = "#930707";
+      alert('Wrong: The correct answer is this: ' + fchoices[counter]);
     }
 
     return setCounter(counter + 1)
