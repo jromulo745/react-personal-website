@@ -86,12 +86,16 @@ function Tester() {
     const answer = document.getElementById("answer").value;
 
     if (answer.toUpperCase() === correct_answer.toUpperCase()) {
-      alert('Correct!');
       document.getElementById("answer").style.backgroundColor = "#078e2d";
+      setTimeout(function() {
+        alert('Correct!');
+      }, 100);
     }
     else {
       document.getElementById("answer").style.backgroundColor = "#930707";
-      alert('Wrong: The correct answer is this: ' + fchoices[counter]);
+      setTimeout(function() {
+        alert('Wrong: The correct answer is this: ' + fchoices[counter]);
+      }, 100);
     }
 
     return setCounter(counter + 1)
