@@ -186,3 +186,10 @@ Know what SaaS, IaaS, and PaaS are.
 Know what public, private, hybrid, and community clouds are.
 Know the difference between measured services and metered utilization.
 Be familiar with these cloud-based concepts: rapid elasticity, high availability, and file synchronization.
+Objective 4.2 focuses on the following: purpose of virtual machines, resource requirements, and security requirements.
+Know the difference between type 1 and type 2 hypervisors!
+Know the virtualization network connection options.
+Because VM network connections can be security vulnerabilities, you will need to monitor and disable them as necessary, and in some cases you will have to disable networking altogether.
+Note: Docker as a whole is a group of platform as a service (PaaS) products.
+Type 1 hypervisors are used on servers; they are also known as bare metal because they allow virtual machines to access the computer hardware directly. With cross-platform virtualization, an organization uses multiple virtualization programs, such as VirtualBox and Hyper-V.
+Virtualization must be enabled in the BIOS/UEFI. Then, Hyper-V needs to be turned on in Windows Features. Finally, the system needs to be restarted. Updating and securing the host system is recommended but is not a requirement.
