@@ -193,3 +193,8 @@ Because VM network connections can be security vulnerabilities, you will need to
 Note: Docker as a whole is a group of platform as a service (PaaS) products.
 Type 1 hypervisors are used on servers; they are also known as bare metal because they allow virtual machines to access the computer hardware directly. With cross-platform virtualization, an organization uses multiple virtualization programs, such as VirtualBox and Hyper-V.
 Virtualization must be enabled in the BIOS/UEFI. Then, Hyper-V needs to be turned on in Windows Features. Finally, the system needs to be restarted. Updating and securing the host system is recommended but is not a requirement.
+Objective 5.1 concentrates on the CompTIA A+ six-step troubleshooting methodology.
+Always consider organizational and corporate policies, procedures, and impacts before implementing any changes.
+Perform backups before making changes!
+Remember to refer to the vendor’s instructions for guidance while implementing the solution in step 4.
+Make sure the system works! Always remember to test and verify full system functionality.
