@@ -93,9 +93,6 @@ function WebApps() {
     // let initial = fchoices[counter].toString().split(',');
     let initial = [];
     initial = fchoices[counter];
-    
-    console.log(initial);
-    console.log(fchoices[counter]);
 
     let temp = [];
     let inner_used_numbers = [];
@@ -107,9 +104,6 @@ function WebApps() {
       }
       inner_used_numbers.push(inner_random_number);
       temp.push(initial[inner_random_number]);
-
-      console.log('1st ' + fchoices[counter][inner_random_number]);
-      console.log('2nd ' + initial[inner_random_number]);
     }
 
     return showQuestion(true) 
@@ -124,7 +118,9 @@ function WebApps() {
   }
   
   function nextQuestion() {
-    let initial = fchoices[counter].toString().split(',');
+    let initial = [];
+    initial = fchoices[counter];
+    
     let temp = [];
     let inner_used_numbers = [];
   
