@@ -55,7 +55,7 @@
 "Which of the following uses a 7-pin data connector and a 15-pin power connector?": ["VGA", "IDE", "*SATA", "Molex", "Cat 6"],
 "Which type of cable would you use if you were concerned about EMI?": ["Plenum rated", "UTP", "*STP", "Coaxial", "None of the listed"],
 "You have been tasked with connecting a newer Android smartphone to an external TV so that you can display the CEO’s smartphone screen during a meeting. Which of the following adapters would typically be the best solution?": ["Micro-USB to HDMI", "Micro-USB to DVI", "USB-C to DVI", "USB-C to Ethernet", "*USB-C to HDMI"],
-"Which type of cable can connect a computer to another computer directly": ["Straight-through", "*Crossover", "568A", "SATA", "568B"],
+"Which type of cable can connect a computer to another computer directly?": ["Straight-through", "*Crossover", "568A", "SATA", "568B"],
 "Which connector is used for cable Internet?": ["LC", "*F-connector", "Direct burial", "RJ45", "DE-9"],
 "Which cable type would be suitable for longer distances, such as connecting two cities?": ["Coaxial", "Twisted pair", "Multimode fiber", "*Single-mode fiber", "None of the listed"],
 "You need to make a high-speed connection to an external storage device that can handle 40 Gbps. Which of the following is the best solution?": ["USB 3.2", "*Thunderbolt", "HDMI", "Cat 6a", "None of the listed"],
