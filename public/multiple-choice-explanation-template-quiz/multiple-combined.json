@@ -8,7 +8,7 @@
 "Which kind of video technology do most laptop LCDs use?": ["*TFT active matrix", "Passive matrix", "OLED", "MAC ID", "None of the listed"],
 "Which of the following uses an organic compound that emits light?": ["TFT active matrix", "IPS", "*OLED", "LCD", "LED"],
 "Which of the following allows you to access a WLAN?": ["LED", "Webcam", "Digitizer", "Stylus", "*Wi-Fi card"],
-"You have been tasked with replacing a Wi-Fi/Bluetooth card in a laptop. You open the laptop and find a card that uses the 2230 standard. What type of card is this?": ["Mini PCIe", "*M.2", "Digitizer, RJ45", "None of the listed"],
+"You have been tasked with replacing a Wi-Fi/Bluetooth card in a laptop. You open the laptop and find a card that uses the 2230 standard. What type of card is this?": ["Mini PCIe", "*M.2", "Digitizer", "RJ45", "None of the listed"],
 "Which type of charging connector would you find on an iPad?": ["Micro-USB", "*Lightning", "Thunderbolt", "IP68", "None of the listed"],
 "You are required to add long-term storage to a smartphone. Which type would you most likely add?": ["DDR4", "*microSD", "LPDDR4", "SSD", "SIM"],
 "The organization you work for allows employees to work using their own mobile devices in a BYOD manner. You have been tasked with setting up the devices so that they can “beam” information back and forth between each other. What is this known as?": ["Mobile hotspot", "IoT", "CYOD", "IR", "*NFC"],
