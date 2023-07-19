@@ -30,6 +30,8 @@ function WebApps() {
   let questions = [];
   let choices = [];
 
+  let final_question_boolean = false;
+
   const [total_questions_amount, setAmount] = useState();
   const [counter_for_display, setDisplayCounter] = useState(0);
 
@@ -54,6 +56,7 @@ function WebApps() {
   const [correct_answer, setAnswer] = useState('');
   const [correct_button, setCorrectButton] = useState('');
   const [disabled, setDisabled] = useState(false);
+  const [next_button_disable, setNextButtonDisabled] = useState(false);
 
   const [fquestions, setFQuestions] = useState([]);
   const [fchoices, setFChoices] = useState([]);
@@ -118,6 +121,14 @@ function WebApps() {
   }
   
   function nextQuestion() {
+
+    console.log(counter + 1);
+    console.log(total_questions_amount);
+
+    if ((counter + 1) === total_questions_amount) {
+      final_question_boolean = true;
+    }
+
     let initial = [];
     initial = fchoices[counter];
     
@@ -146,7 +157,8 @@ function WebApps() {
     + setButtonColor3('#04AA6D')
     + setButtonColor4('#04AA6D')
     + setButtonColor5('#04AA6D')
-    + setDisabled(false);
+    + setDisabled(false)
+    + setNextButtonDisabled(final_question_boolean);
   }
 
   function checkAnswer(choice, selected_button) {
@@ -192,7 +204,7 @@ function WebApps() {
             {/* begin test button; null if next button true and content if false */}
             {next_button ? null : (<button style={{marginBottom: '10px', marginTop: '5px'}} onClick={handleClick}>Begin Test</button>)}
             {/* next button */}
-            {next_button ? (<button style={{marginBottom: '-10px', marginTop: '5px'}} onClick ={nextQuestion}>Next Question</button>) : null}
+            {next_button ? (<button style={{marginBottom: '-10px', marginTop: '5px'}} disabled={next_button_disable} onClick ={nextQuestion}>Next Question</button>) : null}
           </div>
           {question_cluster ? (<h2 style={{color: 'gray', textAlign: 'center', marginLeft: '10px', marginBottom: '-40px'}}><br />({counter_for_display + 1} of {total_questions_amount})</h2>) : null}
           {question_cluster ? (<h2 style={{textAlign: 'left', marginLeft: '10px'}}><br />{current_question}</h2>) : null}
