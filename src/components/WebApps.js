@@ -71,10 +71,10 @@ function WebApps() {
     const resJSON = await res.json();
 
     for (let i in resJSON) {
-      console.log(i, resJSON[i]);
       questions.push(i);
       choices.push(resJSON[i]);
     }
+
     for (let i_1 = 0; i_1 < questions.length; i_1++) {
       let random_number = getRandomIntInclusive(0, questions.length - 1);
       while (used_numbers.includes(random_number) === true) {
@@ -90,11 +90,16 @@ function WebApps() {
   }
 
   function handleClick() {
-    let initial = fchoices[counter].toString().split(',');
+    // let initial = fchoices[counter].toString().split(',');
+    let initial = [];
+    initial = fchoices[counter];
+    
+    console.log(initial);
+    console.log(fchoices[counter]);
+
     let temp = [];
     let inner_used_numbers = [];
   
-    console.log('vrooooo');
     for (let i = 0; i < initial.length; i++) {
       let inner_random_number = getRandomIntInclusive(0, initial.length - 1);
       while (inner_used_numbers.includes(inner_random_number) === true) {
@@ -102,6 +107,9 @@ function WebApps() {
       }
       inner_used_numbers.push(inner_random_number);
       temp.push(initial[inner_random_number]);
+
+      console.log('1st ' + fchoices[counter][inner_random_number]);
+      console.log('2nd ' + initial[inner_random_number]);
     }
 
     return showQuestion(true) 
@@ -120,7 +128,6 @@ function WebApps() {
     let temp = [];
     let inner_used_numbers = [];
   
-    console.log('vrooooo');
     for (let i = 0; i < initial.length; i++) {
       let inner_random_number = getRandomIntInclusive(0, initial.length - 1);
       while (inner_used_numbers.includes(inner_random_number) === true) {
