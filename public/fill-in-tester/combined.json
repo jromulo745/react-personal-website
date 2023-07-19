@@ -299,5 +299,12 @@
 "(Virtualization network connection question): This option disables networking for the VM altogether, which might be required for users who are working on confidential systems, testbeds, applications, and so on.": "No networking",
 "What does NAT stand for?": "Network Address Translation",
 "A _______ can be any environment created for development, testing, or training that is isolated from any production servers and isolated from the rest of the operating system that the _______ is running on.": "sandbox",
-"A _________ is much simpler than a full virtual machine. First, it requires only a basic OS kernel. Second, it doesn’t require much in the way of virtual hardware. Finally, in most _________ systems, you can run multiple _________ on top of a single OS. Another important difference between a _________ and a virtual machine is usage. As mentioned previously, a virtual machine is used to run an entire operating system. A _________ is typically used to run a single application (and, less commonly, a couple of applications). Out of the box, _________ technology creates excellent isolation between applications.": "container"
+"A _________ is much simpler than a full virtual machine. First, it requires only a basic OS kernel. Second, it doesn’t require much in the way of virtual hardware. Finally, in most _________ systems, you can run multiple _________ on top of a single OS. Another important difference between a _________ and a virtual machine is usage. As mentioned previously, a virtual machine is used to run an entire operating system. A _________ is typically used to run a single application (and, less commonly, a couple of applications). Out of the box, _________ technology creates excellent isolation between applications.": "container",
+"What is step 1 to CompTIA's Six-Step Troubleshooting Process?": "Identify the problem.",
+"What is step 2 to CompTIA's Six-Step Troubleshooting Process?": "Establish a theory of probable cause. (Question the obvious.)",
+"What is step 3 to CompTIA's Six-Step Troubleshooting Process?": "Test the theory to determine the cause.",
+"What is step 4 to CompTIA's Six-Step Troubleshooting Process?": "Establish a plan of action to resolve the problem and implement the solution.",
+"What is step 5 to CompTIA's Six-Step Troubleshooting Process?": "Verify full system functionality and, if applicable, implement preventive measures.",
+"What is step 6 to CompTIA's Six-Step Troubleshooting Process?": "Document the findings, actions, and outcomes."
+
 }
