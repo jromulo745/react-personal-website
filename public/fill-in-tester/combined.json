@@ -294,7 +294,7 @@
 "Which type of hypervisor is the following: The hypervisor runs directly on the host computer’s hardware. (VMware ESXi, Microsoft Hyper-V (Windows Server), KVM).": "Type 1",
 "Which type of hypervisor is the following: The hypervisor runs within the operating system. Guest VMs are one step removed from the hardware. (VMware Workstation, VirtualBox, Hyper-V for Windows clients).": "Type 2",
 "(Virtualization network connection question): This gives the VM (also known as the guest) direct access to the hosting computer’s network connection. It allows external access, but in this case, the VM must have its own IP address on the external IP network. Because of the direct connectivity to the external network, this can be a security concern. In most cases, some type of NAT is preferred.": "Bridged networking",
-"(Virtualization network connection question): Often the default, this gives the guest access to the external network, but by using NAT, the guest gets a separate IP address on a private network.": "NAT",
+"(Virtualization network connection question): Often the default, this gives the guest access to the external network, but by using ___, the guest gets a separate IP address on a private network.": "NAT",
 "(Virtualization network connection question): This creates a private virtual network for the guests, and they can communicate with each other but not with the external network.": "Host-only networking",
 "(Virtualization network connection question): This option disables networking for the VM altogether, which might be required for users who are working on confidential systems, testbeds, applications, and so on.": "No networking",
 "What does NAT stand for?": "Network Address Translation",
