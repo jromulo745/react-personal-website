@@ -89,9 +89,9 @@
 "What is another name for 802.11ac?": "Wi-Fi 5",
 "What is another name for 802.11ax?": "Wi-Fi 6",
 "What frequency does Bluetooth use?": "2.4 GHz",
-"What is the maximum theoretical throughput (per stream) for 802.11n": "150 mbps",
-"What is the maximum theoretical throughput (per stream) for 802.11ac" :"867 mbps",
-"What is the maximum theoretical throughput (per stream) for 802.11ax" :"1201 mbps",
+"What is the maximum theoretical throughput (per stream) for 802.11n?": "150 mbps",
+"What is the maximum theoretical throughput (per stream) for 802.11ac?" :"867 mbps",
+"What is the maximum theoretical throughput (per stream) for 802.11ax?" :"1201 mbps",
 "____ servers store, transfer, migrate, synchronize, and archive files.": "File",
 "A ___ server houses the website of an organization.": "web",
 "_____ servers are basic servers that take control of multiple printers on the network.": "Print",
@@ -305,5 +305,5 @@
 "What is step 3 to CompTIA's Six-Step Troubleshooting Process?": "Test the theory to determine the cause.",
 "What is step 4 to CompTIA's Six-Step Troubleshooting Process?": "Establish a plan of action to resolve the problem and implement the solution.",
 "What is step 5 to CompTIA's Six-Step Troubleshooting Process?": "Verify full system functionality and, if applicable, implement preventive measures.",
-"What is step 6 to CompTIA's Six-Step Troubleshooting Process?": "Document the findings, actions, and outcomes."
+"What is step 6 to CompTIA's Six-Step Troubleshooting Process?": "Document findings, actions, and outcomes."
 }
