@@ -122,8 +122,8 @@ function WebApps() {
   
   function nextQuestion() {
 
-    console.log(counter + 1);
-    console.log(total_questions_amount);
+    // console.log(counter + 1);
+    // console.log(total_questions_amount);
 
     if ((counter + 1) === total_questions_amount) {
       final_question_boolean = true;

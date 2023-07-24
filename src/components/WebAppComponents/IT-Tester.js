@@ -33,7 +33,7 @@ function Tester() {
     const res = await fetch('fill-in-tester/combined.json');
     const resJSON = await res.json();
     for (let i in resJSON) {
-      console.log(i, resJSON[i]);
+      // console.log(i, resJSON[i]);
       questions.push(i);
       choices.push(resJSON[i]);
     }

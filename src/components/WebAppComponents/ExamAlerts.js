@@ -45,8 +45,7 @@ function ExamAlerts() {
   function nextQuestion() {
     return setDisplayCounter(counter_for_display + 1)
     + setQuestion(questions[counter]) 
-    + setCounter(counter + 1) 
-    + console.log(counter);
+    + setCounter(counter + 1);
   }
 
   //checkpoint
