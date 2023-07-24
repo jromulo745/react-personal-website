@@ -98,6 +98,8 @@ function Tester() {
       }, 100);
     }
 
+    console.log('Correct Answer :' + correct_answer);
+
     return setCounter(counter + 1)
     + setDisabled(false)
     + setDisabledInput(true)
