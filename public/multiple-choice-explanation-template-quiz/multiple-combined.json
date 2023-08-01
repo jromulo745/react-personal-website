@@ -50,7 +50,7 @@
 "Which tool is used to test a network adapter without a network connection?": ["Punchdown tool", "Cable tester", "*Loopback plug", "Tone generator and probe", "None of the listed"],
 "Your boss is concerned about overlapping wireless networks from neighboring companies using 802.11ac. Which tool should you use to analyze the problem, and which frequency should you display for analysis?": ["*Wi-Fi analyzer; 5 GHz", "Cable certifier; 5 GHz", "Loopback plug; 2.4 GHz", "Wi-Fi analyzer; 2.4 GHz", "None of the listed"],
 "What would be required to attach RJ45 plugs to the ends of a single patch cable?": ["Tone and probe kit", "Multimeter", "Cable stripper", "*Crimper", "None of the listed"],
-"Your organization is terminating Category 6 cable to a 110 block. Which of the following tools should you use to perform the task?": ["*Punchdown tool", "Crimper", "Cable stripper", "Tone generator", "None of the listed"],
+"Your organization is terminating a Category 6 cable to a 110 block. Which of the following tools should you use to perform the task?": ["*Punchdown tool", "Crimper", "Cable stripper", "Tone generator", "None of the listed"],
 "Say that you are responsible for the network security of your organization. You decide to perform packet sniffing on your switch by using Wireshark. Which of the following tools will help you to do this?": ["Tone and probe kit", "*Network tap", "Wireless analyzer", "Loopback plug", "None of the listed"],
 "Which of the following uses a 7-pin data connector and a 15-pin power connector?": ["VGA", "IDE", "*SATA", "Molex", "Cat 6"],
 "Which type of cable would you use if you were concerned about EMI?": ["Plenum rated", "UTP", "*STP", "Coaxial", "None of the listed"],
