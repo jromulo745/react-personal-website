@@ -30,7 +30,7 @@
 "How many pins does a SODIMM DDR4 module have?": "260",
 "How many pins does a SODIMM DDR5 module have?": "262",
 "For two computers to communicate, they must both use the same ________.": "protocol",
-"____ sends email": "SMTP",
+"____ sends email.": "SMTP",
 "What does SMTP stand for?": "Simple Mail Transfer Protocol",
 "___ allows computers to transfer files back and forth.": "FTP",
 "What does FTP stand for?": "File Transfer Protocol",
