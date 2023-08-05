@@ -312,7 +312,7 @@
 "Electromagnetic interference that comes from an adjacent wire.": "Crosstalk",
 "The ability to continue non-stop when a hardware failure occurs.": "fault tolerance",
 "The loss of signal strength in networking cables or connections.": "signal attenuation",
-"A network condition that occurs when a time delay in the sending of data packets over a network connection occurs.": "jitter",
+"A network condition that occurs when a [variable] time delay in the sending of data packets over a network connection occurs.": "jitter",
 "An actual measure of how much data is successfully transferred from the source to a destination.": "Throughput",
 "The measure of time that it takes for data to reach its destination across a network. Usually, we measure network _______ as the round-trip time from a workstation to the distant end and back.": "latency",
 "The maximum rate of data transfer across a given network. Now, _________ is more of a theoretical concept that measures how much data could be transferred from a source to a destination under ideal conditions.": "bandwidth",
