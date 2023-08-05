@@ -211,7 +211,7 @@
 "Know that ___ RAM can prevent data loss and potential system crashes by automatically correcting memory errors.": "ECC",
 "Portion of the hard drive set aside by an OS to act like RAM when the system needs more RAM than is installed. A file containing this data is typically called a page file in Windows and a swap file in UNIX platforms like Linux and macOS.": "virtual memory",
 "What does DOCSIS stand for?": "Data Over Cable Service Interface Specification",
-"What does LC stand for in fiber connections?": "Local connector",
+"What does LC stand for in fiber connections?": "Lucent connector",
 "What does ST stand for in fiber connections?": "Straight tip",
 "What does SC stand for in fiber connections?": "Subscriber connector",
 "____ is a serial bus communication interface used to move data to and from storage drives.": "SATA",
