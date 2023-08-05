@@ -78,6 +78,7 @@ Know where and how to configure client-side DNS and DHCP settings.
 Know the loopback addresses for IPv6 and IPv4.
 Understand how IPv6 addresses can be truncated.
 Objective 2.6 focuses on the following concepts: DNS, DHCP, VLANs, and VPNs.
+Sometimes, you’ll connect to a domain such as dprocomputer.com. And sometimes you’ll connect to a specific host within a domain—for example, server1.dprocomputer.com. In this example, server1 is the hostname, and dprocomputer.com is the domain name. Together, they form a fully qualified domain name (FQDN), also sometimes referred to as an absolute domain name or simply as a DNS name.
 Hostname + Domain name = FQDN (fully qualified domain name).
 Be able to identify DNS Address (A and AAAA) records, Mail Exchange (MX) records, and Text (TXT) records for the exam.
 A DHCP scope is a range of IP addresses that a DHCP server can hand out to clients.
