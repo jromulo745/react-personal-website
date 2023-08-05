@@ -64,6 +64,8 @@
 "Which of the following technologies allows for a 128-bit-wide bus?": ["ECC", "*Dual-channel", "Virtual RAM", "Task Manager", "None of the listed"],
 "Which of the following technologies allows for a 192-bit-wide bus?": ["ECC", "*Tripple-channel", "Virtual RAM", "Task Manager", "None of the listed"],
 "A technician has installed dual-inline memory modules that each have 288-pins and use 1.1 V. What kind of RAM has the tech installed?": ["DDR4 DIMMs", "DDR3 DIMMs", "DDR4 SODIMMs", "*DDR5 DIMMs", "None of the listed"],
+"A technician has installed dual-inline memory modules that each have 240-pins and uses 1.2 V or 1.5 V What kind of RAM has the tech installed?": ["DDR4 DIMMs", "*DDR3 DIMMs", "DDR4 SODIMMs", "DDR5 DIMMs", "None of the listed"],
+"A technician has installed dual-inline memory modules that each have 288-pins and uses 1.2 V to 1.35 What kind of RAM has the tech installed?": ["*DDR4 DIMMs", "DDR3 DIMMs", "DDR4 SODIMMs", "DDR5 DIMMs", "None of the listed"],
 "How much data can a SATA Revision 3.0 drive transfer per second?": ["50 MB/s", "90 MB/s", "1969 MB/s", "*6 Gb/s", "16 Gb/s"],
 "Which level of RAID stripes data and parity across three or more disks?": ["RAID 0", "RAID 1", "*RAID 5", "Striping", "RAID 10"],
 "A customer complains that an important disc is stuck in the system’s Blu-ray drive. What should you recommend to the customer?": ["Get a screwdriver and disassemble the drive.", "Format the disc.", "*Use a paper clip to eject the tray.", "Dispose of the drive and replace the media.", "None of the listed"],
