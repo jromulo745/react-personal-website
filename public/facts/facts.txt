@@ -30,7 +30,7 @@ Note the difference: A laptop is placed, or “docked,” into a docking station
 Objective 1.4 concentrates on the following concepts: wireless/cellular technologies, Bluetooth setup, location services, mobile device management (MDM) and mobile application management (MAM), email configuration, and mobile device synchronization.
 For simplicity, most of the time I use the term cellular to refer to smartphone connectivity to a telecommunications provider, meaning 3G, 4G, 5G, and so on.
 Understand how to connect to a Wi-Fi network in Android, iOS, and iPadOS.
-Know the CompTIA process for configuring Bluetooth: 1. Enable Bluetooth; 2. Enable pairing; 3. Find a device for pairing; 4. Enter the appropriate PIN code; 5. Test connectivity
+Know the CompTIA process for configuring Bluetooth: 1. Enable Bluetooth; 2. Enable pairing; 3. Find a device for pairing; 4. Enter the appropriate PIN code; 5. Test connectivity.
 IMAP 143 993 Know the email protocols/ports: SMTP = 25/465/587; POP3 = 110/995, IMAP = 143/993.
 Another protocol you might implement when setting up secure email is S/MIME (Secure/Multipurpose Internet Mail Extensions). This is used for authentication and message integrity and is built into some email clients.
 Know the different cellular standards and that 5G can transmit at 20 Gbps.
