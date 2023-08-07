@@ -214,7 +214,7 @@
 "What does LC stand for in fiber connections?": "Lucent connector",
 "What does ST stand for in fiber connections?": "Straight tip",
 "What does SC stand for in fiber connections?": "Subscriber connector",
-"____ is a serial bus communication interface used to move data to and from storage drives.": "SATA",
+"____ is a serial bus communication interface used to move data to and from storage drives; this uses a 7-pin data connector and a 15-pin power connector..": "SATA",
 "For power, a SATA drive utilizes a __-___ power connector.": "15 pin",
 "What SATA version has a maximum data of 6 Gb/s and a transfer rate of 600 MB/s": "3.0",
 "What SATA version has a maximum data of 16 Gb/s and a transfer rate of 1969 MB/s": "3.2",
