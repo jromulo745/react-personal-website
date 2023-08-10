@@ -63,7 +63,7 @@
 "A ___ enables data communications over the air when a computer is equipped with a wireless networking adapter.": "WAP",
 "What does WAP stand for?": "Wireless Access Point",
 "A ___ is responsible for transmitting data between two or more wireless computers, usually at 6 GHz, 5 GHz, or 2.4 GHz frequencies.": "WAP",
-"A ________ is a hardware appliance or software application that protects a computer from unwanted intrusion.": "firewall",
+"A ________ is a networking hardware appliance or software application that protects a computer from unwanted intrusion.": "firewall",
 "A ___ is an expansion card or motherboard interface that enables a PC to connect to a network via a network cable.": "NIC",
 "What does NIC stand for?": "Network Interface Card",
 "The ___ is the original connecting device for computers on a LAN. It creates a simple shared physical connection that all computers use to send data.": "hub",
