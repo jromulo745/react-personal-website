@@ -54,7 +54,7 @@ function ExamAlerts() {
 
       {/* --------------------------------------------------------------- */}
 
-      <h2 style={{marginBottom: '5px'}}>Exam Alerts and Notes</h2>
+      <h2 style={{marginBottom: '5px'}}>Exam Alerts and Notes (220-1101)</h2>
       <div className="container">
         {/* ---- */}
         <div className='item' style={{backgroundImage: 'none', backgroundColor: '#333333'}}>
