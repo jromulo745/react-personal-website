@@ -1,0 +1,14 @@
+Objective 1.1 concentrates on Windows 10 editions, feature differences, and upgrade paths.
+Windows 10 editions RAM limits: Home = 128 GB, Pro = 2 TB, Pro for Workstations/ Enterprise = 6 TB.
+Note: Regardless of what edition you run, it’s important to make sure that your system has the resources required to run Windows. For example, on a 64-bit system, the Windows 10 minimum requirements include 1 GHz CPU, 2 GB of RAM, and 20 GB of free storage space (32 GB for virtual machines).
+Be able to identify Windows 10’s icons, Start button, Start menu, taskbar, search tool, pinned applications, and notification area.
+Objective 1.2 focuses on navigational commands such as cd, dir, md, and rmdir; as well as command-line tools such as chkdsk, sfc, format, and robocopy.
+Note: Objective 1.2 focuses on navigational commands such as cd, dir, md, and rmdir; as well as command-line tools such as chkdsk, sfc, format, and robocopy.
+Know how to open PowerShell from the Search tool, from the Start menu, and from the Run prompt.
+Note: As a reminder, directory is the original name for folder. The more accurate names are directory when working in any command line and folder when working in the GUI, but the two terms are sometimes used interchangeably.
+Note: The older versions of md and rd are mkdir and rmdir, respectively.
+Know how to use the cd, cd .., and cd \ commands in PowerShell or the Command Prompt.
+Note: You can create a file such as test.txt within Notepad, which is available via the Search tool or by going to Run and typing notepad. Notepad is the default graphical text editor in Windows, and you can use it for editing text files and scripts. However, you might opt to use another editor, especially if you plan on doing any scripting or coding. (Some alternatives include Notepad++, Sublime Text, Atom, and my favorite—though it is not graphical—Vim.)
+Understand how to use dir, copy, xcopy, and robocopy for the exam.
+Note: %systemroot% is the folder where Windows was installed; by default, it is C:\Windows.
+Know the basic switches for chkdsk and sfc, such as chkdsk /F and sfc /scannow.

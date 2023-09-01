@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import styles from '../styles.module.css';
-import ExamAlerts from './WebAppComponents/ExamAlerts';
-import Tester from './WebAppComponents/IT-Tester';
-import MultipleChoiceCoreTwo from './WebAppComponents/MultipleChoiceCoreTwo';
-import ExamAlertsCoreTwo from './WebAppComponents/ExamAlertsCoreTwo';
+import styles from '../../styles.module.css';
 
-function WebApps() {
+function MultipleChoiceCoreTwo() {
   
   const hover_style = {
     cursor: 'pointer',
@@ -72,7 +68,7 @@ function WebApps() {
 
   async function getCombined() {
     //load questions data
-    const res = await fetch('/multiple-choice-explanation-template-quiz/multiple-combined.json')
+    const res = await fetch('/multiple-choice-core-two/multiple-combined.json')
     const resJSON = await res.json();
 
     for (let i in resJSON) {
@@ -182,19 +178,7 @@ function WebApps() {
   //checkpoint
   return (
     <div className="banner_box banner">
-
-      {/* --------------------------------------------------------------- */}
-
-      <h2 style={{marginBottom: '5px'}}>File Character Counter</h2>
-      <div className="container">
-        <div className='item' style={{backgroundImage: 'none', backgroundColor: '#333333'}}>
-          <input style={hover_style} className="box" type="file" onChange={handleFileInputChange} />
-        </div>
-      </div>
-
-      {/* --------------------------------------------------------------- */}
-
-      <h2 style={{marginTop: '5px', marginBottom: '-2px'}}>IT Tester (220-1101)</h2>
+      <h2 style={{marginTop: '5px', marginBottom: '-2px'}}>IT Tester (220-1102)</h2>
       <div className="container">
         {/* ---- */}
         <div className='item' style={{backgroundImage: 'none', backgroundColor: '#333333'}}>
@@ -225,27 +209,8 @@ function WebApps() {
         </div>
         {/* ---- */}
       </div>
-
-      {/* --------------------------------------------------------------- */}
-
-      <ExamAlerts />
-
-      {/* --------------------------------------------------------------- */}
-
-      <Tester />
-
-      {/* --------------------------------------------------------------- */}
-      
-      <MultipleChoiceCoreTwo />
-
-      {/* --------------------------------------------------------------- */}
-
-      <ExamAlertsCoreTwo />
-
-      {/* --------------------------------------------------------------- */}
-
     </div>
   );
 }
 
-export default WebApps;
+export default MultipleChoiceCoreTwo;
