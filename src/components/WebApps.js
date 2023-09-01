@@ -4,6 +4,7 @@ import ExamAlerts from './WebAppComponents/ExamAlerts';
 import Tester from './WebAppComponents/IT-Tester';
 import MultipleChoiceCoreTwo from './WebAppComponents/MultipleChoiceCoreTwo';
 import ExamAlertsCoreTwo from './WebAppComponents/ExamAlertsCoreTwo';
+import TesterTwo from './WebAppComponents/IT-Tester-core-two';
 
 function WebApps() {
   
@@ -241,6 +242,10 @@ function WebApps() {
       {/* --------------------------------------------------------------- */}
 
       <ExamAlertsCoreTwo />
+
+      {/* --------------------------------------------------------------- */}
+      
+      <TesterTwo />
 
       {/* --------------------------------------------------------------- */}
 
