@@ -1,5 +1,3 @@
 {
-"What is the module format for a stick of SODIMM DDR4 RAM?": ["1.8-inch", "204-pin", "*260-pin", "2.5-inch", "None of the listed"],
-"You just added a second memory module to a laptop. However, after rebooting the system, the OS reports the same amount of memory as before. What should you do next?": ["Replace both memory modules.", "Run Windows Update.", "Replace the motherboard.", "*Reseat the laptop memory.", "None of the listed"],
-"One of your customers reports that she walked away from her laptop for 30 minutes, and when she returned, the display was very dim. She increased the brightness setting and moved the mouse but to no effect. What should you do first?": ["Replace the LCD screen.", "Check the operating system for corruption.", "Connect an external monitor to verify that the video card works.", "*Check whether the laptop is now on battery power.", "None of the listed"]
+"Where should you go to find out what applications are running in the background in Windows 10?": ["Taskbar", "Start menu", "Quick Launch", "*Notification area", "Cortana"]
 }
