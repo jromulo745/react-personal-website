@@ -1,3 +1,7 @@
 {
-"Where should you go to find out what applications are running in the background in Windows 10?": ["Taskbar", "Start menu", "Quick Launch", "*Notification area", "Cortana"]
+"Where should you go to find out what applications are running in the background in Windows 10?": ["Taskbar", "Start menu", "Quick Launch", "*Notification area", "Cortana"],
+"Which command can copy multiple files and entire directory trees?": ["copy", "cut", "paste", "*robocopy", "None of the listed"],
+"Which command determines whether protected system files have been overwritten and replaces those files with the original version?": ["chkdsk", "md", "*sfc", "xcopy", "None of the listed"],
+"You need to assign drive letters and make a partition active from the Command Prompt. What of the following will allow you to perform these activities?": ["Disk Management", "format", "defrag", "*diskpart", "None of the listed"],
+"You have been tasked with bringing the policies of a Windows 10 computer up to date. You won’t be able to log off and back on, and you must use the Command Prompt. Which of the following tools should you use?": ["shutdown", "rd", "*gpupdate", "Local Security Policy", "winver"]
 }
