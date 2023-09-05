@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../../styles.module.css';
+import jsonData from './json-files/explanations.json';
 
 function MultipleChoiceCoreTwo() {
   
@@ -7,26 +8,11 @@ function MultipleChoiceCoreTwo() {
     cursor: 'pointer',
   };
 
-  function handleFileRead(event) {
-    const content = event.target.result.toString();
-    let counter = 0;
-    for (let i = 0; i < content.length; i++){
-      counter++;
-    }
-    alert(counter + " characters are stored in the file");
-  }
-
-  function handleFileInputChange(event) {
-    const file = event.target.files[0];
-    const reader = new FileReader();
-    reader.onload = handleFileRead;
-    reader.readAsText(file);
-  }//
-
   // -----------------------------------------------------------------
 
   let questions = [];
   let choices = [];
+  let explanations = [];
 
   let final_question_boolean = false;
 
@@ -35,6 +21,7 @@ function MultipleChoiceCoreTwo() {
 
   let final_questions = [];
   let final_choices = [];
+  let final_explanations = [];
   let used_numbers = [];
 
   const [counter, setCounter] = useState(0);
@@ -58,6 +45,7 @@ function MultipleChoiceCoreTwo() {
 
   const [fquestions, setFQuestions] = useState([]);
   const [fchoices, setFChoices] = useState([]);
+  const [fexplanations, setFExplanations] = useState([]);
 
 
   function getRandomIntInclusive(min, max) {
@@ -76,6 +64,10 @@ function MultipleChoiceCoreTwo() {
       choices.push(resJSON[i]);
     }
 
+    for (let i in jsonData) {
+      explanations.push(i)
+    }
+
     for (let i_1 = 0; i_1 < questions.length; i_1++) {
       let random_number = getRandomIntInclusive(0, questions.length - 1);
       while (used_numbers.includes(random_number) === true) {
@@ -84,9 +76,11 @@ function MultipleChoiceCoreTwo() {
       used_numbers.push(random_number);
       final_questions.push(questions[random_number]);
       final_choices.push(choices[random_number]);
+      final_explanations.push(explanations[random_number]);
     }
     setFChoices(final_choices);
     setFQuestions(final_questions);
+    setFExplanations(final_explanations);
     setAmount(final_choices.length);
   }
 
@@ -155,6 +149,10 @@ function MultipleChoiceCoreTwo() {
     + setNextButtonDisabled(final_question_boolean);
   }
 
+  function alertUser() {
+    alert(fexplanations[counter - 1]);
+  }
+
   function checkAnswer(choice, selected_button) {
     return setDisabled(true)
     + (setButtonColor1('#AAAAAA'), setButtonColor2('#AAAAAA'), setButtonColor3('#AAAAAA'), setButtonColor4('#AAAAAA'), setButtonColor5('#AAAAAA'))
@@ -187,24 +185,25 @@ function MultipleChoiceCoreTwo() {
             {next_button ? null : (<button style={{marginBottom: '10px', marginTop: '5px'}} onClick={handleClick}>Begin Test</button>)}
             {/* next button */}
             {next_button ? (<button style={{marginBottom: '-10px', marginTop: '5px'}} disabled={next_button_disable} onClick ={nextQuestion}>Next Question</button>) : null}
+            {next_button ? (<button style={{marginLeft: '15px', marginBottom: '-10px', marginTop: '5px'}} disabled={next_button_disable} onClick ={alertUser}>Show explanation</button>) : null}
           </div>
           {question_cluster ? (<h2 style={{color: 'gray', textAlign: 'center', marginLeft: '10px', marginBottom: '-40px'}}><br />({counter_for_display + 1} of {total_questions_amount})</h2>) : null}
           {question_cluster ? (<h2 style={{textAlign: 'left', marginLeft: '10px'}}><br />{current_question}</h2>) : null}
           {question_cluster ? ( <div style={{textAlign: 'left', marginLeft: '10px'}} className={`${styles.button} ${styles.button}`}>
             <br />
-            <button style={{backgroundColor: buttonColor1}} disabled={disabled} onClick={() => {checkAnswer(current_choice_1, '1')}}>{current_choice_1}</button>
+            <button style={{backgroundColor: buttonColor1}} disabled={disabled} onClick={() => {checkAnswer(current_choice_1, '1');}}>{current_choice_1}</button>
             <br />
             <br />
-            <button style={{backgroundColor: buttonColor2}} disabled={disabled} onClick={() => {checkAnswer(current_choice_2, '2');}}>{current_choice_2}</button>
+            <button style={{backgroundColor: buttonColor2}} disabled={disabled} onClick={() => {checkAnswer(current_choice_2, '2')}}>{current_choice_2}</button>
             <br />
             <br />
-            <button style={{backgroundColor: buttonColor3}} disabled={disabled} onClick={() => {checkAnswer(current_choice_3, '3');}}>{current_choice_3}</button>
+            <button style={{backgroundColor: buttonColor3}} disabled={disabled} onClick={() => {checkAnswer(current_choice_3, '3')}}>{current_choice_3}</button>
             <br />
             <br />
-            <button style={{backgroundColor: buttonColor4}} disabled={disabled} onClick={() => {checkAnswer(current_choice_4, '4');}}>{current_choice_4}</button>
+            <button style={{backgroundColor: buttonColor4}} disabled={disabled} onClick={() => {checkAnswer(current_choice_4, '4')}}>{current_choice_4}</button>
             <br />
             <br />
-            <button style={{backgroundColor: buttonColor5, marginBottom: '15px'}} disabled={disabled} onClick={() => {checkAnswer(current_choice_5, '5');}}>{current_choice_5}</button> </div>
+            <button style={{backgroundColor: buttonColor5, marginBottom: '15px'}} disabled={disabled} onClick={() => {checkAnswer(current_choice_5, '5')}}>{current_choice_5}</button> </div>
           ) : null}
         </div>
         {/* ---- */}
