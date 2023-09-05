@@ -85,7 +85,6 @@ function MultipleChoiceCoreTwo() {
   }
 
   function handleClick() {
-    // let initial = fchoices[counter].toString().split(',');
     let initial = [];
     initial = fchoices[counter];
 
