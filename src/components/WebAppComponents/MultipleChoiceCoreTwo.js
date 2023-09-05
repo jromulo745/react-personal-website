@@ -150,6 +150,7 @@ function MultipleChoiceCoreTwo() {
 
   function alertUser() {
     alert(fexplanations[counter - 1]);
+    console.log(fexplanations[counter - 1]);
   }
 
   function checkAnswer(choice, selected_button) {
@@ -184,7 +185,7 @@ function MultipleChoiceCoreTwo() {
             {next_button ? null : (<button style={{marginBottom: '10px', marginTop: '5px'}} onClick={handleClick}>Begin Test</button>)}
             {/* next button */}
             {next_button ? (<button style={{marginBottom: '-10px', marginTop: '5px'}} disabled={next_button_disable} onClick ={nextQuestion}>Next Question</button>) : null}
-            {next_button ? (<button style={{marginLeft: '15px', marginBottom: '-10px', marginTop: '5px'}} disabled={next_button_disable} onClick ={alertUser}>Show explanation</button>) : null}
+            {next_button ? (<button style={{marginLeft: '15px', marginBottom: '-10px', marginTop: '5px'}} onClick ={alertUser}>Show explanation</button>) : null}
           </div>
           {question_cluster ? (<h2 style={{color: 'gray', textAlign: 'center', marginLeft: '10px', marginBottom: '-40px'}}><br />({counter_for_display + 1} of {total_questions_amount})</h2>) : null}
           {question_cluster ? (<h2 style={{textAlign: 'left', marginLeft: '10px'}}><br />{current_question}</h2>) : null}
