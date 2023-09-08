@@ -176,7 +176,7 @@ function MultipleChoiceCoreTwo() {
   //checkpoint
   return (
     <div className="banner_box banner">
-      <h2 style={{marginTop: '5px', marginBottom: '-2px'}}>IT Tester (220-1102)</h2>
+      <h2 style={{color: 'magenta', marginTop: '5px', marginBottom: '-2px'}}>IT Tester (220-1102)</h2>
       <div className="container">
         {/* ---- */}
         <div className='item' style={{backgroundImage: 'none', backgroundColor: '#333333'}}>

@@ -46,7 +46,7 @@ function ExamAlertsCoreTwo() {
 
       {/* --------------------------------------------------------------- */}
 
-      <h2 style={{marginBottom: '5px'}}>Exam Alerts and Notes (220-1102)</h2>
+      <h2 style={{color: 'magenta', marginBottom: '5px'}}>Exam Alerts and Notes (220-1102)</h2>
       <div className="container">
         {/* ---- */}
         <div className='item' style={{backgroundImage: 'none', backgroundColor: '#333333'}}>
