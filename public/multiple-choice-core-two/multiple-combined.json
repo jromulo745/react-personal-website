@@ -3,5 +3,10 @@
 "Which command can copy multiple files and entire directory trees?": ["copy", "cut", "paste", "*robocopy", "None of the listed"],
 "Which command determines whether protected system files have been overwritten and replaces those files with the original version?": ["chkdsk", "md", "*sfc", "xcopy", "None of the listed"],
 "You need to assign drive letters and make a partition active from the Command Prompt. What of the following will allow you to perform these activities?": ["Disk Management", "format", "defrag", "*diskpart", "None of the listed"],
-"You have been tasked with bringing the policies of a Windows 10 computer up to date. You won’t be able to log off and back on, and you must use the Command Prompt. Which of the following tools should you use?": ["shutdown", "rd", "*gpupdate", "Local Security Policy", "winver"]
+"You have been tasked with bringing the policies of a Windows 10 computer up to date. You won’t be able to log off and back on, and you must use the Command Prompt. Which of the following tools should you use?": ["shutdown", "rd", "*gpupdate", "Local Security Policy", "winver"],
+"Which command shows the path of routers between your computer and a web server?": ["ping","ipconfig","*tracert","nbstat","none of the listed"],
+"You need to map a network drive to a share named data1 on a computer named Jupiter-Server. You want to use the J: drive letter. Which syntax should you use to do this in the Command Prompt?": ["*net use J: \\\\Jupiter-Server\\data1","net use J \\Jupiter-Server\\data1","net use Jupiter-Server\\J\\data1","net use J: \\Jupiter-Server\\data1","none of the listed"],
+"A user’s computer is powered on and appears to work properly. However, the user cannot access any wired network resources, printers, or shared drives. In addition, the user cannot access the Internet. Which of the following commands should you use to troubleshoot the problem?": ["netstat","net use","*ping","nslookup","none of the listed"],
+"A customer is unable to access a network share. However, the customer can access email. You analyze the system and confirm that the customer has the correct permissions to access the share. Which command should you use first to troubleshoot the problem?": ["nslookup","*net use","ipconfig","ping","none of the listed"],
+
 }
