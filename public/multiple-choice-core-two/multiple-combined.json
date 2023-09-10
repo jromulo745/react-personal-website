@@ -7,6 +7,5 @@
 "Which command shows the path of routers between your computer and a web server?": ["ping","ipconfig","*tracert","nbstat","none of the listed"],
 "You need to map a network drive to a share named data1 on a computer named Jupiter-Server. You want to use the J: drive letter. Which syntax should you use to do this in the Command Prompt?": ["*net use J: \\\\Jupiter-Server\\data1","net use J \\Jupiter-Server\\data1","net use Jupiter-Server\\J\\data1","net use J: \\Jupiter-Server\\data1","none of the listed"],
 "A user’s computer is powered on and appears to work properly. However, the user cannot access any wired network resources, printers, or shared drives. In addition, the user cannot access the Internet. Which of the following commands should you use to troubleshoot the problem?": ["netstat","net use","*ping","nslookup","none of the listed"],
-"A customer is unable to access a network share. However, the customer can access email. You analyze the system and confirm that the customer has the correct permissions to access the share. Which command should you use first to troubleshoot the problem?": ["nslookup","*net use","ipconfig","ping","none of the listed"],
-
+"A customer is unable to access a network share. However, the customer can access email. You analyze the system and confirm that the customer has the correct permissions to access the share. Which command should you use first to troubleshoot the problem?": ["nslookup","*net use","ipconfig","ping","none of the listed"]
 }
