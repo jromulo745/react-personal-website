@@ -43,6 +43,12 @@
 "Enter the command that pings the host such that you are able to specify the number of bytes per packet to be sent.": "ping -l",
 "Enter the command that pings 192.168.0.1 packets the size of 1500.": "ping -l 1500 192.168.0.1",
 "Enter the command that resolves address to hostnames.": "ping -a",
-"Enter the command that forces the use of IPv4 and results in IPv4-based data.": "ping -4"
-
+"Enter the command that forces the use of IPv4 and results in IPv4-based data.": "ping -4",
+"Enter the command that forces the use of IPv6 and results in IPv6-based data.": "ping -6",
+"Enter the command that sends 450 pings, each 1500 bytes in size, to 192.168.0.1": "ping -n 450 -l 1500 192.168.0.1",
+"Windows command-line utility used to follow the path a packet takes between two hosts. The utility is traceroute in macOS and Linux.": "tracert",
+"Command-line tool in Windows and Linux to identify inbound and outbound TCP/IP connections with the host.": "netstat",
+"Command-line program in Windows used to determine exactly what information the DNS server is providing about a specific host name.": "nslookup",
+"Command-line utility in Windows that enables users to view and change a whole host of network settings and information.": "net",
+"Enter the command to create an account": "net user /add"
 }

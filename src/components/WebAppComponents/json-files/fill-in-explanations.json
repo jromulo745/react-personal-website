@@ -43,6 +43,12 @@
 "42": "This can also be beneficial when testing how a server, a router, or another device reacts to larger packet sizes.",
 "43": "",
 "44": "When pinging an IP address with -a, you also see the hostname associated with the IP address.",
-"45": "For example, in Windows, if you are running both IPv4 and IPv6 and type a command such as ping loopback, your results will by default be IPv6 based and might result in a reply from ::1 (that is, if your system is working properly). But by adding the -4 option, you force the use of IPv4, so the command ping -4 loopback can result in a reply from 127.0.0.1. Try it!"
-
+"45": "For example, in Windows, if you are running both IPv4 and IPv6 and type a command such as ping loopback, your results will by default be IPv6 based and might result in a reply from ::1 (that is, if your system is working properly). But by adding the -4 option, you force the use of IPv4, so the command ping -4 loopback can result in a reply from 127.0.0.1. Try it!",
+"46": "For example, a ping -6 loopback will result in a reply from ::1.",
+"47": "",
+"48": "This builds on ping in that it sends packets to destinations beyond the local computer’s network. It pings each router along the way between you and the final destination.",
+"49": "This shows the network statistics for the local computer. The default command displays sessions to remote computers.",
+"50": "This queries DNS servers to discover DNS details, including the IP addresses of hosts. For example, to find the IP address of example.com, you would type nslookup example.com",
+"51": "This command is actually a collection of commands. You can use the net stop command to stop a service and the net start command to start a service from the command line. In networking, you might use the net view command to see which computers are currently available on the network or the net share command to share folders for other users to view. For the exam, you should know the types of net commands that enable you to view or create mapped network drives. To view any currently mapped network drives, simply type net use.",
+"52": ""
 }
