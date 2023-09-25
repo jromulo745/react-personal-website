@@ -13,3 +13,16 @@ Understand how to use dir, copy, xcopy, and robocopy for the exam.
 Note: %systemroot% is the folder where Windows was installed; by default, it is C:\Windows.
 Know the basic switches for chkdsk and sfc, such as chkdsk /F and sfc /scannow.
 One issue that plagues users is the infamous “Missing Operating System” message. This message usually means that the drive has a few small errors. But even though the system won’t boot, you can still run chkdsk to find and fix problems on the drive. Boot to the repair environment (if possible) or boot to the Windows media, access Windows RE, and then open the Command Prompt. From there, run chkdsk with either the /F switch (which fixes errors on the drive) or the /R switch (which locates bad sectors and recovers data)—or run both. This procedure can also help with “Invalid Boot Disk” errors. (Of course, first check that the BIOS/UEFI is booting to the correct drive in the boot priority menu.) If you can fix the drive, it is recommended to back up files right away, as there could be subsequent drive failure.
+To view additional IP configuration information, such as DNS servers and MAC addresses, use the ipconfig /all command.
+Remember that the gateway address must be on the same network number as the IP address of the client computer. If a user can’t connect to any websites but can connect to other computers on the LAN, it could be that the DNS server address is incorrectly configured.
+Command-line utility for Windows servers and workstations that displays the current TCP/IP configuration of the machine. Similar to ip in Linux.
+Another way to flush the DNS cache is to issue the command netsh int ip in PowerShell. But beware: This completely resets the TCP/IP connection for the network adapter.
+Latency is the time it takes for sent data packets to be received by a remote computer.
+You can also use ping to test whether a computer has TCP/IP installed properly, even if it isn’t wired to the network! To do this, use the ping 127.0.0.1 command for IPv4 and ping ::1 for IPv6. These IP addresses, known as loopback addresses, are used for testing and are available on every host that has TCP/IP installed. 
+Know how to ping the local loopback IPv4 and IPv6 addresses.
+Know how to use the -t, -n, -l, -a, -4, and -6 options with ping.
+Options can be combined as well; for example, ping -n 450 -l 1500 192.168.0.1 would send 450 pings, each 1500 bytes in size. To create a baseline, you could use this command at a specific time every month, store the results, and then compare them to find possible deficiencies in performance of a server, router, and so on.
+Be able to recognize the output of a tracert command!
+Note: Programmatically, the hostname is referred to as the %COMPUTERNAME% variable in any Windows system. Developers can use this variable to specify the system’s name without knowing the actual hostname! Try the following command:
+Be able to recognize the output of a netstat command!
+Know how and why to use the net use command!

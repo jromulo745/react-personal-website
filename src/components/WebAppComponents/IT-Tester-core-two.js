@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import styles from '../../styles.module.css';
-
+import jsonData from './json-files/fill-in-explanations.json';
 
 function TesterTwo() {
 
@@ -8,13 +8,16 @@ function TesterTwo() {
 
   let questions = [];
   let choices = [];
+  let explanations = [];
 
   let final_questions = [];
   let final_choices = [];
+  let final_explanations = [];
   let used_numbers = [];
 
   const [fquestions, setFQuestions] = useState([]);
   const [fchoices, setFChoices] = useState([]);
+  const [fexplanations, setFExplanations] = useState([]);
 
   const [total_questions_amount, setAmount] = useState();
   const [counter_for_display, setDisplayCounter] = useState(0);
@@ -37,6 +40,11 @@ function TesterTwo() {
       questions.push(i);
       choices.push(resJSON[i]);
     }
+
+    for (let i in jsonData) {
+      explanations.push(jsonData[i])
+    }
+
     for (let i_1 = 0; i_1 < questions.length; i_1++) {
       let random_number = getRandomIntInclusive(0, questions.length - 1);
       while (used_numbers.includes(random_number) === true) {
@@ -45,9 +53,11 @@ function TesterTwo() {
       used_numbers.push(random_number);
       final_questions.push(questions[random_number]);
       final_choices.push(choices[random_number]);
+      final_explanations.push(explanations[random_number]);
     }
     setFChoices(final_choices);
     setFQuestions(final_questions);
+    setFExplanations(final_explanations);
     setAmount(final_questions.length);
   }
 
@@ -58,7 +68,6 @@ function TesterTwo() {
   }
 
   function handleClick() {
-  
     return showQuestion(true) 
     + showNextButton(true)
     + setQuestion(fquestions[counter])
@@ -88,17 +97,17 @@ function TesterTwo() {
     if (answer.toUpperCase() === correct_answer.toUpperCase()) {
       document.getElementById("answer").style.backgroundColor = "#078e2d";
       setTimeout(function() {
-        alert('Correct!');
+        alert('Correct!\n\n' + fexplanations[counter]);
       }, 100);
     }
     else {
       document.getElementById("answer").style.backgroundColor = "#930707";
       setTimeout(function() {
-        alert('Wrong: The correct answer is this: ' + fchoices[counter]);
+        alert('Wrong: The correct answer is this: ' + fchoices[counter] + '\n\n' + fexplanations[counter]);
       }, 100);
     }
 
-    console.log('Correct Answer :' + correct_answer);
+    console.log('Correct Answer: ' + correct_answer);
 
     return setCounter(counter + 1)
     + setDisabled(false)
