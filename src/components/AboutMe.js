@@ -15,11 +15,11 @@ function AboutMe() {
         <div className={`${styles.box} ${styles.list_box}`}>
           <h2 style={{textAlign: 'center'}}>About me</h2>
           <p style={{textAlign: 'left', margin: '20px'}}>I am a computer science graduate from CSUEB with experience with the following languages: 
-            Python, Java, C++, HTML, CSS, JavaScript, and MIPS Assembly. I am also currently working for Cal State 
-            East Bay's Information Technology department as an assistant aiding with digital accessibility 
-            media production.</p>
+            Python, Java, C++, HTML, CSS, JavaScript, and MIPS Assembly. I have also worked for Cal State 
+            East Bay's Information Technology department as an analyst aiding with digital accessibility 
+            media production and IT asset procurement.</p>
 
-          <h2 style={{textAlign: 'center', marginTop: '30px'}}>Current Position</h2>
+          <h2 style={{textAlign: 'center', marginTop: '30px'}}>Work Experience</h2>
           <ul style={{textAlign: 'left', margin: '10px 50px'}}>
             <li>Information Technology Services (ITS) Accessibility Production Assistant</li>
             <ul>
