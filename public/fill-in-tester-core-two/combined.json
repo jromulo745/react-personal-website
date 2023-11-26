@@ -50,5 +50,5 @@
 "Command-line tool in Windows and Linux to identify inbound and outbound TCP/IP connections with the host.": "netstat",
 "Command-line program in Windows used to determine exactly what information the DNS server is providing about a specific host name.": "nslookup",
 "Command-line utility in Windows that enables users to view and change a whole host of network settings and information.": "net",
-"Enter the command to create an account": "net user /add"
+"Enter the command to create an account.": "net user /add"
 }
