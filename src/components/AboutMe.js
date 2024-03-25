@@ -8,7 +8,7 @@ function AboutMe() {
       <div className={styles.container}>
         <div className={styles.box}>
           <h2 style={{textAlign: 'center'}}>Work Photo</h2>
-          <img src={require('../images/photo.png')} width="283" height="377" />
+          <img src={require('../images/profile-picture.jpg')} width="300" height="300" />
           <img src={require('../images/csueb.eb.wg.png')} width="145" height="112" style={{marginTop: '10px', marginBottom: '10px', marginLeft: '42px', marginRight: '60px', opacity: '30%'}} />
         </div>
 
